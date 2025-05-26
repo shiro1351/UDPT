@@ -1,0 +1,2767 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>games</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/scss/style.scss" />
+    <script type="module" src="./src/js/main.js"></script>
+    <style>
+        .text-card {
+            color: white;
+            font-weight: bold;
+            position: absolute;
+            top: 78%;
+            left: 50.2%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 100%;
+            padding: 5px;
+            border-radius: 0px 0px 5px 5px;
+            background-color: rgba(129, 123, 123, 0.5);
+        }
+
+        .t-text-card {
+            color: white;
+            font-weight: bold;
+            position: absolute;
+            top: 89%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 100%;
+            padding: 5px;
+            border-radius: 0px 0px 5px 5px;
+            background-color: rgba(129, 123, 123, 0.5);
+        }
+    </style>
+</head>
+
+<body class="bg-gray postion-relative">
+    <!-- ================= Appbar ================= -->
+    <div
+      class="main-navbar bg-white row align-items-center fixed-top shadow z-3 mx-1 justify-content-between"
+    >
+          <!-- search -->
+          <div class="col-lg-2 col-sm-5 d-flex align-items-center">
+            <!-- logo -->
+            <i class="fab fa-facebook text-primary" style="font-size: 40px"></i>
+            <!-- search bar -->
+            <div class="ms-2 pointer d-flex position-relative">
+              <!-- collapsed -->
+              <span
+                class="input-group-prepend d-xl-none"
+                id="searchMenu"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-auto-close="outside"
+              >
+                <div
+                  class="input-group-text bg-gray border-0 rounded-circle"
+                  style="min-height: 40px"
+                >
+                  <i class="fas fa-search text-muted"></i>
+                </div>
+              </span>
+              <!-- expanded -->
+              <span
+                class="input-group-prepend d-none d-xl-block"
+                id="searchMenu"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-auto-close="outside"
+              >
+                <div
+                  class="input-group-text bg-gray border-0 rounded-pill"
+                  style="height: 40px; width: 240px"
+                >
+                  <i class="fas fa-search me-2 text-muted">
+                  </i>
+                  <span class="fs-7 text-capitalize">Tìm kiếm trên Facebook</span>
+                </div>
+              </span>
+              <!-- search menu -->
+              <ul
+                class="dropdown-menu overflow-auto border-0 shadow p-3"
+                aria-labelledby="searchMenu"
+                style="width: 20em; max-height: 600px"
+              >
+                <!-- search input -->
+                <li>
+                  <input
+                    type="text"
+                    class="rounded-pill border-0 bg-gray dropdown-item"
+                    placeholder="Search Facebook..."
+                    autofocus
+                  />
+                </li>
+                <!-- search 1 -->
+                <li class="my-4">
+                  <div
+                    class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between"
+                    role="alert"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./src/img/add1.jpg"
+                        alt="avatar"
+                        class="rounded-circle me-2"
+                        style="width: 35px; height: 35px; object-fit: cover"
+                      />
+                      <p class="m-0">Dalian Nguyễn</p>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close p-0 m-0"
+                      data-bs-dismiss="alert"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                </li>
+                <!-- search 2 -->
+                <li class="my-4">
+                  <div
+                    class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between"
+                    role="alert"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./src/img/add2.jpg"
+                        alt="avatar"
+                        class="rounded-circle me-2"
+                        style="width: 35px; height: 35px; object-fit: cover"
+                      />
+                      <p class="m-0">Trần Quân</p>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close p-0 m-0"
+                      data-bs-dismiss="alert"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                </li>
+                <!-- search 3 -->
+                <li class="my-4">
+                  <div
+                    class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between"
+                    role="alert"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./src/img/add3.jpg"
+                        alt="avatar"
+                        class="rounded-circle me-2"
+                        style="width: 35px; height: 35px; object-fit: cover"
+                      />
+                      <p class="m-0">Jpop Quang Thắng</p>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close p-0 m-0"
+                      data-bs-dismiss="alert"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- menu icon -->
+            <div
+              class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center mx-2 col-sm-auto d-lg-none"
+              style="width: 38px; height: 38px"
+              type="button"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            >
+            <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+          <!-- nav -->
+          <div class="col-lg-8 col-sm-4 d-none d-lg-flex justify-content-center">
+            <!-- home -->
+            <div class="mx-md-2 mx-lg-4 nav__btn">
+              <a class="btn px-4" href="./feed.html">
+                <i class="fas fa-home text-muted fs-4"></i>
+              </a>
+            </div>
+            <!-- videos -->
+            <div class="mx-md-2 mx-lg-4 nav__btn">
+              <a class="btn px-4" href="./video.html">
+                <i class="fa-brands fa-youtube text-muted fs-4"></i>
+              </a>
+            </div>
+            <!-- market -->
+            <div class="mx-md-2 mx-lg-4 nav__btn">
+              <a class="btn px-4" href="./shop.html">
+                <i class="fas fa-store text-muted fs-4"></i>
+              </a>
+            </div>
+            <!-- group -->
+            <div class="mx-md-2 mx-lg-4 nav__btn">
+              <a class="btn px-4" href="./groups.html">
+                <i
+                  type="button"
+                  class="position-relative fas fa-users text-muted fs-4"
+                >
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    style="font-size: 0.5rem"
+                  >
+                    1
+                    <span class="visually-hidden"></span>
+                  </span>
+                </i>
+              </a>
+            </div>
+            <!-- gaming -->
+            <div class="mx-md-2 mx-lg-4 nav__btn nav__btn-active">
+              <a  class="btn px-4" href="./games.html">
+                <i class="fas fa-gamepad text-muted fs-4"></i>
+              </a>
+            </div>
+          </div>
+          <!-- menus -->
+          <div class="col-lg-2 col-sm-4 d-flex align-items-center justify-content-end gx-0">
+            <!-- app main menu -->
+            <div
+              class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center mx-2"
+              style="width: 38px; height: 38px"
+              type="button"
+              id="mainMenu"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            >
+              <i class="fa-solid fa-table-cells"></i>
+            </div>
+            <!-- chat -->
+            <div
+              class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center mx-2"
+              style="width: 38px; height: 38px"
+              type="button"
+              id="chatMenu"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            >
+              <i class="fas fa-comment"></i>
+            </div>
+            <!-- chat  dd -->
+            <ul
+              class="dropdown-menu border-0 shadow p-3 overflow-auto"
+              aria-labelledby="chatMenu"
+              style="width: 23em; max-height: 600px"
+            >
+              <!-- header -->
+              <li class="p-1">
+                <div class="d-flex justify-content-between">
+                  <h2>Đoạn chat</h2>
+                  <div>
+                    <!-- setting -->
+                    <i
+                      class="fas fa-ellipsis-h text-muted mx-2"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                    ></i>
+                    <!-- setting dd -->
+                    <ul class="dropdown-menu shadow" style="width: 18em">
+                      <!-- title -->
+                      <div class="p-2">
+                        <h5>Cài đặt đoạn chat</h5>
+                        <span class="text-muted fs-7"
+                          >Tùy chỉnh trải nghiệm trên Messenger.</span
+                        >
+                      </div>
+                      <hr />
+                      <!-- incoming sound -->
+                      <li>
+                        <div
+                          class="dropdown-item d-flex align-items-center justify-content-between"
+                        >
+                          <!-- icon -->
+                          <div class="d-flex align-items-center">
+                            <i class="fas fa-phone-alt me-3"></i>
+                            <p class="m-0">Incoming call sounds</p>
+                          </div>
+                          <!-- toggle -->
+                          <div class="form-check form-switch m-0">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="flexSwitchCheckChecked"
+                              checked
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexSwitchCheckChecked"
+                            ></label>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- message sound -->
+                      <li>
+                        <div
+                          class="dropdown-item d-flex align-items-center justify-content-between"
+                        >
+                          <!-- icon -->
+                          <div class="d-flex align-items-center">
+                            <i class="fas fa-volume-off me-4 fs-4"></i>
+                            <p class="m-0">Message sounds</p>
+                          </div>
+                          <!-- toggle -->
+                          <div class="form-check form-switch m-0">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="flexSwitchCheckChecked"
+                              checked
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexSwitchCheckChecked"
+                            ></label>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- popup message -->
+                      <li>
+                        <div
+                          class="dropdown-item d-flex align-items-center justify-content-between"
+                        >
+                          <!-- icon -->
+                          <div class="d-flex align-items-center">
+                            <i class="fas fa-spinner me-3"></i>
+                            <p class="m-0">Pop-up new messages</p>
+                          </div>
+                          <!-- toggle -->
+                          <div class="form-check form-switch m-0">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="flexSwitchCheckChecked"
+                              checked
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexSwitchCheckChecked"
+                            ></label>
+                          </div>
+                        </div>
+                        <span class="ms-5 text-muted fs-7"
+                          >Automatically open new messages.</span
+                        >
+                      </li>
+                      <hr class="m-0" />
+                      <!-- item 1 -->
+                      <li>
+                        <div
+                          class="dropdown-item d-flex align-items-center justify-content-between"
+                        >
+                          <!-- icon -->
+                          <div class="d-flex align-items-center">
+                            <i class="fas fa-toggle-off me-3"></i>
+                            <p class="m-0">Turn Off Active Status</p>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- item 2 -->
+                      <li>
+                        <div
+                          class="dropdown-item d-flex align-items-center justify-content-between"
+                        >
+                          <!-- icon -->
+                          <div class="d-flex align-items-center">
+                            <i class="far fa-comment-alt me-3"></i>
+                            <p class="m-0">Message Request</p>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- item 3 -->
+                      <li>
+                        <div
+                          class="dropdown-item d-flex align-items-center justify-content-between"
+                        >
+                          <!-- icon -->
+                          <div class="d-flex align-items-center">
+                            <i class="fas fa-share-square me-3"></i>
+                            <p class="m-0">Message delivery settings</p>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- item 4 -->
+                      <li>
+                        <div
+                          class="dropdown-item d-flex align-items-center justify-content-between"
+                        >
+                          <!-- icon -->
+                          <div class="d-flex align-items-center">
+                            <i class="fas fa-shield-alt me-3"></i>
+                            <p class="m-0">Block settings</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <i
+                      class="fas fa-expand-arrows-alt text-muted mx-2"
+                      type="button"
+                    ></i>
+                    <!-- new message -->
+                    <i
+                      class="fas fa-edit text-muted mx-2"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#newChat"
+                    ></i>
+                  </div>
+                </div>
+              </li>
+              <!-- search -->
+              <li class="p-1">
+                <div
+                  class="input-group-text bg-gray border-0 rounded-pill"
+                  style="min-height: 40px; min-width: 230px"
+                >
+                  <i class="fas fa-search me-2 text-muted"></i>
+                  <input
+                    type="text"
+                    class="form-control rounded-pill border-0 bg-gray"
+                    placeholder="Search Messenger"
+                  />
+                </div>
+              </li>
+              <!-- message 1 -->
+              <li
+                class="my-2 p-1"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#singleChat1"
+              >
+                <div class="d-flex align-items-center justify-content-between">
+                  <!-- big avatar -->
+                  <div class="d-flex align-items-center justify-content-evenly">
+                    <div class="p-2">
+                      <img
+                        src="https://source.unsplash.com/random/1"
+                        alt="avatar"
+                        class="rounded-circle"
+                        style="width: 58px; height: 58px; object-fit: cover"
+                      />
+                    </div>
+                    <div>
+                      <p class="fs-7 m-0">Mike</p>
+                      <span class="fs-7 text-muted"
+                        >Lorem ipsum &#8226; 7d</span
+                      >
+                    </div>
+                  </div>
+                  <!-- small avatar -->
+                  <div class="p-2">
+                    <img
+                      src="https://source.unsplash.com/random/1"
+                      alt="avatar"
+                      class="rounded-circle"
+                      style="width: 15px; height: 15px; object-fit: cover"
+                    />
+                  </div>
+                </div>
+              </li>
+              <!-- message 2 -->
+              <li
+                class="my-2 p-1"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#singleChat2"
+              >
+                <div class="d-flex align-items-center justify-content-between">
+                  <!-- big avatar -->
+                  <div class="d-flex align-items-center justify-content-evenly">
+                    <div class="p-2">
+                      <img
+                        src="https://source.unsplash.com/random/2"
+                        alt="avatar"
+                        class="rounded-circle"
+                        style="width: 58px; height: 58px; object-fit: cover"
+                      />
+                    </div>
+                    <div>
+                      <p class="fs-7 m-0">
+                        Tuan
+                        <span class="fs-7 text-muted"
+                          >Lorem ipsum &#8226; 7d</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <!-- small avatar -->
+                  <div class="p-2">
+                    <img
+                      src="https://source.unsplash.com/random/2"
+                      alt="avatar"
+                      class="rounded-circle"
+                      style="width: 15px; height: 15px; object-fit: cover"
+                    />
+                  </div>
+                </div>
+              </li>
+              <!-- message 3 -->
+              <li
+                class="my-2 p-1"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#singleChat3"
+              >
+                <div class="d-flex align-items-center justify-content-between">
+                  <!-- big avatar -->
+                  <div class="d-flex align-items-center justify-content-evenly">
+                    <div class="p-2">
+                      <img
+                        src="https://source.unsplash.com/random/3"
+                        alt="avatar"
+                        class="rounded-circle"
+                        style="width: 58px; height: 58px; object-fit: cover"
+                      />
+                    </div>
+                    <div>
+                      <p class="fs-7 m-0">Jerry</p>
+                      <span class="fs-7 text-muted"
+                        >Lorem ipsum &#8226; 7d</span
+                      >
+                    </div>
+                  </div>
+                  <!-- small avatar -->
+                  <div class="p-2">
+                    <img
+                      src="https://source.unsplash.com/random/3"
+                      alt="avatar"
+                      class="rounded-circle"
+                      style="width: 15px; height: 15px; object-fit: cover"
+                    />
+                  </div>
+                </div>
+              </li>
+              <!-- message 4 -->
+              <li
+                class="my-2 p-1"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#singleChat4"
+              >
+                <div class="d-flex align-items-center justify-content-between">
+                  <!-- big avatar -->
+                  <div class="d-flex align-items-center justify-content-evenly">
+                    <div class="p-2">
+                      <img
+                        src="https://source.unsplash.com/random/4"
+                        alt="avatar"
+                        class="rounded-circle"
+                        style="width: 58px; height: 58px; object-fit: cover"
+                      />
+                    </div>
+                    <div>
+                      <p class="fs-7 m-0">Tony</p>
+                      <span class="fs-7 text-muted"
+                        >Lorem ipsum &#8226; 7d</span
+                      >
+                    </div>
+                  </div>
+                  <!-- small avatar -->
+                  <div class="p-2">
+                    <img
+                      src="https://source.unsplash.com/random/4"
+                      alt="avatar"
+                      class="rounded-circle"
+                      style="width: 15px; height: 15px; object-fit: cover"
+                    />
+                  </div>
+                </div>
+              </li>
+              <!-- message 5 -->
+              <li
+                class="my-2 p-1"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#singleChat5"
+              >
+                <div class="d-flex align-items-center justify-content-between">
+                  <!-- big avatar -->
+                  <div class="d-flex align-items-center justify-content-evenly">
+                    <div class="p-2">
+                      <img
+                        src="https://source.unsplash.com/random/5"
+                        alt="avatar"
+                        class="rounded-circle"
+                        style="width: 58px; height: 58px; object-fit: cover"
+                      />
+                    </div>
+                    <div>
+                      <p class="fs-7 m-0">Phu</p>
+                      <span class="fs-7 text-muted"
+                        >Lorem ipsum &#8226; 7d</span
+                      >
+                    </div>
+                  </div>
+                  <!-- small avatar -->
+                  <div class="p-2">
+                    <img
+                      src="https://source.unsplash.com/random/5"
+                      alt="avatar"
+                      class="rounded-circle"
+                      style="width: 15px; height: 15px; object-fit: cover"
+                    />
+                  </div>
+                </div>
+              </li>
+              <hr class="m-0" />
+              <a href="#" class="text-decoration-none">
+                <p class="fw-bold text-center pt-3 m-0">See All in Messenger</p>
+              </a>
+            </ul>
+            <!-- notifications -->
+            <div
+              class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center mx-2"
+              style="width: 38px; height: 38px"
+              type="button"
+              id="notMenu"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            >
+              <i class="fas fa-bell"></i>
+            </div>
+            <!-- notifications dd -->
+            <ul
+              class="dropdown-menu border-0 shadow p-3"
+              aria-labelledby="notMenu"
+              style="width: 23em; max-height: 600px; overflow-y: auto"
+            >
+              <!-- header -->
+              <li class="p-1">
+                <div class="d-flex justify-content-between">
+                  <h2>Notifications</h2>
+                  <div>
+                    <i
+                      class="fas fa-ellipsis-h pointer p-2 rounded-circle bg-gray"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                    ></i>
+                    <ul class="dropdown-menu">
+                      <li
+                        class="dropdown-item d-flex align-items-center"
+                        type="button"
+                      >
+                        <i class="fas fa-check me-3 text-muted"></i>
+                        <p class="m-0">Mark all as read</p>
+                      </li>
+                      <li
+                        class="dropdown-item d-flex align-items-center"
+                        type="button"
+                      >
+                        <i class="fas fa-cog me-3 text-muted"></i>
+                        <p class="m-0">Privacy Checkup</p>
+                      </li>
+                      <li
+                        class="dropdown-item d-flex align-items-center"
+                        type="button"
+                      >
+                        <i class="fas fa-desktop me-3 text-muted"></i>
+                        <p class="m-0">Privacy Shortcuts</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="d-flex" type="button">
+                  <p class="rounded-pill bg-gray p-2">All</p>
+                  <p class="ms-3 rounded-pill bg-primary p-2 text-white">
+                    Unread
+                  </p>
+                </div>
+              </li>
+              <!-- news -->
+              <div class="d-flex justify-content-between mx-2">
+                <h5>New</h5>
+                <a href="#" class="text-decoration-none">See All</a>
+              </div>
+              <!-- news 1 -->
+              <li class="my-2 p-1">
+                <a
+                  href="#"
+                  class="d-flex align-items-center justify-content-evenly text-decoration-none text-dark"
+                >
+                  <div class="d-flex align-items-center justify-content-evenly">
+                    <div class="p-2">
+                      <img
+                        src="https://source.unsplash.com/random/1"
+                        alt="avatar"
+                        class="rounded-circle"
+                        style="width: 58px; height: 58px; object-fit: cover"
+                      />
+                    </div>
+                    <div>
+                      <p class="fs-7 m-0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Harum unde amet at nulla quae porro.
+                      </p>
+                      <span class="fs-7 text-primary">about an hour ago</span>
+                    </div>
+                  </div>
+                  <i class="fas fa-circle fs-7 text-primary"></i>
+                </a>
+              </li>
+              <!-- news 2 -->
+              <li class="my-2 p-1">
+                <a
+                  href="#"
+                  class="d-flex align-items-center justify-content-evenly text-decoration-none text-dark"
+                >
+                  <div class="d-flex align-items-center justify-content-evenly">
+                    <div class="p-2">
+                      <img
+                        src="https://source.unsplash.com/random/2"
+                        alt="avatar"
+                        class="rounded-circle"
+                        style="width: 58px; height: 58px; object-fit: cover"
+                      />
+                    </div>
+                    <div>
+                      <p class="fs-7 m-0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Harum unde amet at nulla quae porro.
+                      </p>
+                      <span class="fs-7 text-primary">about an hour ago</span>
+                    </div>
+                  </div>
+                  <i class="fas fa-circle fs-7 text-primary"></i>
+                </a>
+              </li>
+              <!-- news 3 -->
+              <li class="my-2 p-1">
+                <a
+                  href="#"
+                  class="d-flex align-items-center justify-content-evenly text-decoration-none text-dark"
+                >
+                  <div class="d-flex align-items-center justify-content-evenly">
+                    <div class="p-2">
+                      <img
+                        src="https://source.unsplash.com/random/3"
+                        alt="avatar"
+                        class="rounded-circle"
+                        style="width: 58px; height: 58px; object-fit: cover"
+                      />
+                    </div>
+                    <div>
+                      <p class="fs-7 m-0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Harum unde amet at nulla quae porro.
+                      </p>
+                      <span class="fs-7 text-primary">about an hour ago</span>
+                    </div>
+                  </div>
+                  <i class="fas fa-circle fs-7 text-primary"></i>
+                </a>
+              </li>
+              <!-- news 4 -->
+              <li class="my-2 p-1">
+                <a
+                  href="#"
+                  class="d-flex align-items-center justify-content-evenly text-decoration-none text-dark"
+                >
+                  <div class="d-flex align-items-center justify-content-evenly">
+                    <div class="p-2">
+                      <img
+                        src="https://source.unsplash.com/random/4"
+                        alt="avatar"
+                        class="rounded-circle"
+                        style="width: 58px; height: 58px; object-fit: cover"
+                      />
+                    </div>
+                    <div>
+                      <p class="fs-7 m-0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Harum unde amet at nulla quae porro.
+                      </p>
+                      <span class="fs-7 text-primary">about an hour ago</span>
+                    </div>
+                  </div>
+                  <i class="fas fa-circle fs-7 text-primary"></i>
+                </a>
+              </li>
+              <!-- news 5 -->
+              <li class="my-2 p-1">
+                <a
+                  href="#"
+                  class="d-flex align-items-center justify-content-evenly text-decoration-none text-dark"
+                >
+                  <div class="d-flex align-items-center justify-content-evenly">
+                    <div class="p-2">
+                      <img
+                        src="https://source.unsplash.com/random/5"
+                        alt="avatar"
+                        class="rounded-circle"
+                        style="width: 58px; height: 58px; object-fit: cover"
+                      />
+                    </div>
+                    <div>
+                      <p class="fs-7 m-0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Harum unde amet at nulla quae porro.
+                      </p>
+                      <span class="fs-7 text-primary">about an hour ago</span>
+                    </div>
+                  </div>
+                  <i class="fas fa-circle fs-7 text-primary"></i>
+                </a>
+              </li>
+            </ul>
+            <!-- secondary menu -->
+            <!-- avatar -->
+            <div
+              class="align-items-center justify-content-center d-xl-flex"
+              type="button"
+              id="secondMenu"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            >
+              <img
+                src="https://source.unsplash.com/collection/happy-people"
+                class="rounded-circle me-2"
+                alt="avatar"
+                style="width: 38px; height: 38px; object-fit: cover"
+              />
+            </div>
+            <!-- secondary menu dd -->
+            <ul
+              class="dropdown-menu border-0 shadow p-3"
+              aria-labelledby="secondMenu"
+              style="width: 23em"
+            >
+              <!-- avatar -->
+              <li class="dropdown-item p-1 rounded d-flex" type="button">
+                <img
+                  src="https://source.unsplash.com/collection/happy-people"
+                  alt="avatar"
+                  class="rounded-circle me-2"
+                  style="width: 45px; height: 45px; object-fit: cover"
+                />
+                <div>
+                  <p class="m-0">John</p>
+                  <a class="m-0 text-muted" href="./profile.html">See your profile</a>
+                </div>
+              </li>
+              <hr />
+              <!-- feedback -->
+              <li
+                class="dropdown-item p-1 rounded d-flex align-items-center"
+                type="button"
+              >
+                <i
+                  class="fas fa-exclamation-circle bg-gray p-2 rounded-circle"
+                ></i>
+                <div class="ms-3">
+                  <p class="m-0">Give Feedback</p>
+                  <p class="m-0 text-muted fs-7">
+                    Help us improve the new Facebook.
+                  </p>
+                </div>
+              </li>
+              <hr />
+              <!-- options -->
+              <!-- 1 -->
+              <li class="dropdown-item p-1 my-3 rounded" type="button">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <div class="d-flex" data-bs-toggle="dropdown">
+                      <i class="fas fa-cog bg-gray p-2 rounded-circle"></i>
+                      <div
+                        class="ms-3 d-flex justify-content-between align-items-center w-100"
+                      >
+                        <p class="m-0">Settings & Privacy</p>
+                        <i class="fas fa-chevron-right"></i>
+                      </div>
+                    </div>
+                    <!-- nested menu -->
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item d-flex align-items-center"
+                          href="#"
+                        >
+                          <div
+                            class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2"
+                            style="width: 38px; height: 38px"
+                          >
+                            <i class="fas fa-cog"></i>
+                          </div>
+                          <p class="m-0">Settings</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item d-flex align-items-center"
+                          href="#"
+                        >
+                          <div
+                            class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2"
+                            style="width: 38px; height: 38px"
+                          >
+                            <i class="fas fa-lock"></i>
+                          </div>
+                          <p class="m-0">Privacy Checkup</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item d-flex align-items-center"
+                          href="#"
+                        >
+                          <div
+                            class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2"
+                            style="width: 38px; height: 38px"
+                          >
+                            <i class="fas fa-unlock-alt"></i>
+                          </div>
+                          <p class="m-0">Privacy Shortcuts</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item d-flex align-items-center"
+                          href="#"
+                        >
+                          <div
+                            class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2"
+                            style="width: 38px; height: 38px"
+                          >
+                            <i class="fas fa-list"></i>
+                          </div>
+                          <p class="m-0">Activity Log</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item d-flex align-items-center"
+                          href="#"
+                        >
+                          <div
+                            class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2"
+                            style="width: 38px; height: 38px"
+                          >
+                            <i class="fas fa-newspaper"></i>
+                          </div>
+                          <p class="m-0">News Feed Preferences</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item d-flex align-items-center"
+                          href="#"
+                        >
+                          <div
+                            class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2"
+                            style="width: 38px; height: 38px"
+                          >
+                            <i class="fas fa-globe"></i>
+                          </div>
+                          <p class="m-0">Language</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <!-- 2 -->
+              <li class="dropdown-item p-1 my-3 rounded" type="button">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <div class="d-flex" data-bs-toggle="dropdown">
+                      <i
+                        class="fas fa-question-circle bg-gray p-2 rounded-circle"
+                      ></i>
+                      <div
+                        class="ms-3 d-flex justify-content-between align-items-center w-100"
+                      >
+                        <p class="m-0">Help & Support</p>
+                        <i class="fas fa-chevron-right"></i>
+                      </div>
+                    </div>
+                    <!-- nested menu -->
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item d-flex align-items-center"
+                          href="#"
+                        >
+                          <div
+                            class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2"
+                            style="width: 38px; height: 38px"
+                          >
+                            <i class="fas fa-cog"></i>
+                          </div>
+                          <p class="m-0">Settings</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item d-flex align-items-center"
+                          href="#"
+                        >
+                          <div
+                            class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2"
+                            style="width: 38px; height: 38px"
+                          >
+                            <i class="fas fa-lock"></i>
+                          </div>
+                          <p class="m-0">Privacy Checkup</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item d-flex align-items-center"
+                          href="#"
+                        >
+                          <div
+                            class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2"
+                            style="width: 38px; height: 38px"
+                          >
+                            <i class="fas fa-unlock-alt"></i>
+                          </div>
+                          <p class="m-0">Privacy Shortcuts</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item d-flex align-items-center"
+                          href="#"
+                        >
+                          <div
+                            class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2"
+                            style="width: 38px; height: 38px"
+                          >
+                            <i class="fas fa-list"></i>
+                          </div>
+                          <p class="m-0">Activity Log</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item d-flex align-items-center"
+                          href="#"
+                        >
+                          <div
+                            class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2"
+                            style="width: 38px; height: 38px"
+                          >
+                            <i class="fas fa-newspaper"></i>
+                          </div>
+                          <p class="m-0">News Feed Preferences</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item d-flex align-items-center"
+                          href="#"
+                        >
+                          <div
+                            class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2"
+                            style="width: 38px; height: 38px"
+                          >
+                            <i class="fas fa-globe"></i>
+                          </div>
+                          <p class="m-0">Language</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <!-- 3 -->
+              <li class="dropdown-item p-1 my-3 rounded" type="button">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <div class="d-flex" data-bs-toggle="dropdown">
+                      <i class="fas fa-moon bg-gray p-2 rounded-circle"></i>
+                      <div
+                        class="ms-3 d-flex justify-content-between align-items-center w-100"
+                      >
+                        <p class="m-0">Display & Accessibility</p>
+                        <i class="fas fa-chevron-right"></i>
+                      </div>
+                    </div>
+                    <!-- nested menu -->
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item d-flex align-items-center"
+                          href="#"
+                        >
+                          <div
+                            class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2"
+                            style="width: 38px; height: 38px"
+                          >
+                            <i class="fas fa-cog"></i>
+                          </div>
+                          <p class="m-0">Settings</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item d-flex align-items-center"
+                          href="#"
+                        >
+                          <div
+                            class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2"
+                            style="width: 38px; height: 38px"
+                          >
+                            <i class="fas fa-lock"></i>
+                          </div>
+                          <p class="m-0">Privacy Checkup</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item d-flex align-items-center"
+                          href="#"
+                        >
+                          <div
+                            class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2"
+                            style="width: 38px; height: 38px"
+                          >
+                            <i class="fas fa-unlock-alt"></i>
+                          </div>
+                          <p class="m-0">Privacy Shortcuts</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item d-flex align-items-center"
+                          href="#"
+                        >
+                          <div
+                            class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2"
+                            style="width: 38px; height: 38px"
+                          >
+                            <i class="fas fa-list"></i>
+                          </div>
+                          <p class="m-0">Activity Log</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item d-flex align-items-center"
+                          href="#"
+                        >
+                          <div
+                            class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2"
+                            style="width: 38px; height: 38px"
+                          >
+                            <i class="fas fa-newspaper"></i>
+                          </div>
+                          <p class="m-0">News Feed Preferences</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item d-flex align-items-center"
+                          href="#"
+                        >
+                          <div
+                            class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2"
+                            style="width: 38px; height: 38px"
+                          >
+                            <i class="fas fa-globe"></i>
+                          </div>
+                          <p class="m-0">Language</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <!-- 4 -->
+              <li class="dropdown-item p-1 my-3 rounded" type="button">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a
+                      href="./index.html"
+                      class="d-flex text-decoration-none text-dark"
+                    >
+                      <i class="fas fa-cog bg-gray p-2 rounded-circle"></i>
+                      <div
+                        class="ms-3 d-flex justify-content-between align-items-center w-100"
+                      >
+                        <p class="m-0">Log Out</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- end -->
+          </div>
+    </div>
+    <!-- sec-header -->
+    <div class="col-12 my-5 p-2 d-xl-none fixed-top d-lg-none d-sm-flex bg-white" >
+        <button class="btn me-2 bg-primary text-primary fw-bold bg-opacity-10 rounded-5"> Play Games</button>
+        <button class="btn me-2 bg-secondary bg-opacity-25 fw-medium rounded-5"> Gaming Activity</button>
+        <button class="btn me-2 bg-secondary bg-opacity-25 fw-medium rounded-5"> Notifications</button>
+    </div>
+    <!-- ================= Main ================= -->
+    <!-- content container -->
+    <div class="container-fluid">
+        <div class="row my-5 me-0">
+            <!-- side- -->
+            <div 
+                class="col-4 pe-1 p-3 d-xl-block d-lg-block d-md-none d-sm-none d-none bg-white " style="max-width: 360px;">
+                <div class="p-2 ">
+                    <span class="fs-4 fw-bold">Gaming <span class=""><i
+                                class="fa-solid fa-gear float-end bg-secondary fs-5 p-2 rounded-circle bg-opacity-25 .text-black"></i></span></span>
+                </div>
+                <div class="form d-flex bg-secondary bg-opacity-10 ps-2 m-2 rounded-5">
+                    <i class="fa fa-search mt-2   "></i>
+                    <input type="text" class="form-control form-input border-0 bg-transparent "
+                        placeholder="Search gaming ">
+                </div>
+
+
+                <div class="list-group ">
+                    <a href="#"
+                        class="list-group-item list-group-item-action active text-dark border-0 bg-secondary  p-2 fs-5 fw-medium bg-opacity-10 rounded-3"
+                        aria-current="true">
+                        <i class="fa-solid fa-gamepad text-light bg-primary rounded-circle p-2 me-2"></i>Play games
+                    </a>
+                    <a href="#"
+                        class="list-group-item list-group-item-action  text-dark border-0  p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                            class="fa-solid fa-circle-user bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Gaming
+                        Activity</a>
+                    <a href="#"
+                        class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                            class="fa-solid fa-bell  bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Notifications</a>
+
+                </div>
+
+
+                <hr class="p-1 m-1">
+
+
+
+                <div class="p-2 ">
+                    <span class="fw-medium fs-5">Your games <a href="#"
+                            class="text-decoration-none float-end fs-6 fw-normal mt-1">See all</a></span>
+                    <p style="font-size:14px; color:gray">Save a game to your games to create a shortcut for it
+                        here.</p>
+                    <span class="fs-5  fw-bold"><i
+                            class="fa-solid fa-bookmark  bg-secondary bg-opacity-25 fs-5 rounded-circle p-2 me-2"></i>
+                        Save games</span>
+                </div>
+
+                <hr class="p-1 m-1">
+                <div class=" ">
+                    <span class="fw-medium fs-5">Categories</span>
+
+                    <div class="list-group ">
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0  p-2 fs-5 fw-medium bg-opacity-10 rounded-3"
+                            aria-current="true">
+                            <i class="fa-solid fa-gamepad  bg-secondary bg-opacity-25  rounded-circle p-2 me-2"></i>All
+                            games
+                        </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0  p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-jet-fighter bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Action
+                        </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-map  bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Adventure</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-chess-rook bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Board</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-gopuram bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Builder</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-copy bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Card</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-dice bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Casino</a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-map  bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Adventure</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-chess-rook bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Board</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-gopuram bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Builder</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-copy bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Card</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-dice bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Casino</a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-map  bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Adventure</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-chess-rook bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Board</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-gopuram bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Builder</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-copy bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Card</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-dice bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Casino</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-map  bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Adventure</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-chess-rook bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Board</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-gopuram bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Builder</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-copy bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Card</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-dice bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Casino</a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-copy bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Card</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-dice bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Casino</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-map  bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Adventure</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-chess-rook bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Board</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-gopuram bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Builder</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-copy bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Card</a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action  text-dark border-0 p-2 fs-5 fw-medium bg-opacity-10 rounded-3"><i
+                                class="fa-solid fa-dice bg-secondary bg-opacity-25 rounded-circle p-2 me-2"></i>Casino</a>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- right-cont -->
+            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12   my-2 px-6">
+
+
+                <!-- games we love -->
+                <div class="me-0 px-2 mt-2 ">
+                    <p class="mx-1 mt-lg-1 mt-5 fw-bold fs-4"> Games we love </p>
+                    <!-- scrllspy -->
+
+                    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="col-12 d-flex justify-content position-relative  ">
+
+                                    <!-- s 2 -->
+                                    <div class="col-xl-3 me-2 col-lg-4 story card" style="height: 180px;">
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/420089713_772069301520406_661932808539505884_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=jrewVzRZ_DMAX_icv5h&_nc_ht=scontent.fcai21-3.fna&oh=00_AfAv_0eZdioFH4jpVNLOMDFtOgYDwM-8sqrem4ROJw1xug&oe=65C7A0B0"
+                                            class="card-img-top   rounded-bottom-0" alt="story posts"
+                                            style="min-height: 100px; object-fit:cover" />
+                                        <img class="card-body p-0 col-12 rounded-bottom-3  m-auto"
+                                            src='https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/420089713_772069301520406_661932808539505884_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=jrewVzRZ_DMAX_icv5h&_nc_ht=scontent.fcai21-3.fna&oh=00_AfAv_0eZdioFH4jpVNLOMDFtOgYDwM-8sqrem4ROJw1xug&oe=65C7A0B0'
+                                            width="100%" height="70px" style="filter:blur(10px); ">
+
+                                        <div class="text-card">
+
+                                            <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                            <a href="#"
+                                                class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                        </div>
+
+                                    </div>
+                                    <!-- s 3 -->
+                                    <div class="col-xl-3 me-2 col-lg-4 story card" style="height: 180px;">
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/327459624_569649441468229_3616288363152425235_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=1NOz8G0wtyMAX_aOzvI&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDezZXUGYsXJD8DiJnOQGrHvz2w8gxWQyGFzMNXuIF7uw&oe=65C6D776"
+                                            class="card-img-top   rounded-bottom-0" alt="story posts"
+                                            style="min-height: 100px; object-fit:cover" />
+                                        <img class="card-body p-0 col-12 rounded-bottom-3  m-auto"
+                                            src='https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/327459624_569649441468229_3616288363152425235_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=1NOz8G0wtyMAX_aOzvI&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDezZXUGYsXJD8DiJnOQGrHvz2w8gxWQyGFzMNXuIF7uw&oe=65C6D776'
+                                            width="100%" height="70px" style="filter:blur(10px); ">
+
+                                        <div class="text-card">
+
+                                            <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                            <a href="#"
+                                                class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                        </div>
+
+                                    </div>
+                                    <!-- s 4 -->
+
+                                    <div class="col-xl-3 me-2 col-lg-4 story card" style="height: 180px;">
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/400750890_894886704973844_9189471475105718256_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=zA23FNQYs_MAX-zR5pm&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDfX85AP3eFdYAQVmARaD1ROywyqVTjnut9eVVl309mAw&oe=65C71EC8"
+                                            class="card-img-top   rounded-bottom-0" alt="story posts"
+                                            style="min-height: 100px; object-fit:cover" />
+                                        <img class="card-body p-0 col-12 rounded-bottom-3  m-auto"
+                                            src='https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/400750890_894886704973844_9189471475105718256_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=zA23FNQYs_MAX-zR5pm&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDfX85AP3eFdYAQVmARaD1ROywyqVTjnut9eVVl309mAw&oe=65C71EC8'
+                                            width="100%" height="70px" style="filter:blur(10px); ">
+                                        <div class="text-card">
+
+                                            <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                            <a href="#"
+                                                class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- s 4 -->
+
+                                    <div class="col-xl-3 me-2  d-xl-flex d-lg-none d-sm-flex d-none story card"
+                                        style="height: 180px;">
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/364153661_985249142597560_5880319406816727446_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=yZoGXUCtJi8AX8ju5_F&_nc_oc=AQnDiuK1Q6F7OUs2mAOO4vZw20wZK0J_jh_zoDE1N_hnu0X-YoEM3MgDyZOQl0WdpnY&_nc_ht=scontent.fcai21-3.fna&oh=00_AfAZ3qDVklTWH65OAVGnNt6C93C0JvbjXG7Xkrv97sGX6Q&oe=65C6E5CB"
+                                            class="card-img-top   rounded-bottom-0" alt="story posts"
+                                            style="min-height: 100px; object-fit:cover" />
+                                        <img class="card-body p-0 col-12 rounded-bottom-3  m-auto"
+                                            src='https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/364153661_985249142597560_5880319406816727446_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=yZoGXUCtJi8AX8ju5_F&_nc_oc=AQnDiuK1Q6F7OUs2mAOO4vZw20wZK0J_jh_zoDE1N_hnu0X-YoEM3MgDyZOQl0WdpnY&_nc_ht=scontent.fcai21-3.fna&oh=00_AfAZ3qDVklTWH65OAVGnNt6C93C0JvbjXG7Xkrv97sGX6Q&oe=65C6E5CB'
+                                            width="100%" height="70px" style="filter:blur(10px); ">
+
+                                        <div class="text-card p-1">
+
+                                            <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                            <a href="#"
+                                                class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-12 d-flex justify-content position-relative  ">
+
+                                    <!-- s 2 -->
+                                    <div class="col-xl-3 me-2 col-lg-4 story card" style="height: 180px;">
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/420089713_772069301520406_661932808539505884_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=jrewVzRZ_DMAX_icv5h&_nc_ht=scontent.fcai21-3.fna&oh=00_AfAv_0eZdioFH4jpVNLOMDFtOgYDwM-8sqrem4ROJw1xug&oe=65C7A0B0"
+                                            class="card-img-top   rounded-bottom-0" alt="story posts"
+                                            style="min-height: 100px; object-fit:cover" />
+                                        <img class="card-body p-0 col-12 rounded-bottom-3  m-auto"
+                                            src='https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/420089713_772069301520406_661932808539505884_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=jrewVzRZ_DMAX_icv5h&_nc_ht=scontent.fcai21-3.fna&oh=00_AfAv_0eZdioFH4jpVNLOMDFtOgYDwM-8sqrem4ROJw1xug&oe=65C7A0B0'
+                                            width="100%" height="70px" style="filter:blur(10px); ">
+
+                                        <div class="text-card">
+
+                                            <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                            <a href="#"
+                                                class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                        </div>
+
+                                    </div>
+                                    <!-- s 3 -->
+                                    <div class="col-xl-3 me-2 col-lg-4 story card" style="height: 180px;">
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/327459624_569649441468229_3616288363152425235_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=1NOz8G0wtyMAX_aOzvI&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDezZXUGYsXJD8DiJnOQGrHvz2w8gxWQyGFzMNXuIF7uw&oe=65C6D776"
+                                            class="card-img-top   rounded-bottom-0" alt="story posts"
+                                            style="min-height: 100px; object-fit:cover" />
+                                        <img class="card-body p-0 col-12 rounded-bottom-3  m-auto"
+                                            src='https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/327459624_569649441468229_3616288363152425235_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=1NOz8G0wtyMAX_aOzvI&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDezZXUGYsXJD8DiJnOQGrHvz2w8gxWQyGFzMNXuIF7uw&oe=65C6D776'
+                                            width="100%" height="70px" style="filter:blur(10px); ">
+
+                                        <div class="text-card">
+
+                                            <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                            <a href="#"
+                                                class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                        </div>
+
+                                    </div>
+                                    <!-- s 4 -->
+
+                                    <div class="col-xl-3 me-2 col-lg-4 story card" style="height: 180px;">
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/400750890_894886704973844_9189471475105718256_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=zA23FNQYs_MAX-zR5pm&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDfX85AP3eFdYAQVmARaD1ROywyqVTjnut9eVVl309mAw&oe=65C71EC8"
+                                            class="card-img-top   rounded-bottom-0" alt="story posts"
+                                            style="min-height: 100px; object-fit:cover" />
+                                        <img class="card-body p-0 col-12 rounded-bottom-3  m-auto"
+                                            src='https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/400750890_894886704973844_9189471475105718256_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=zA23FNQYs_MAX-zR5pm&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDfX85AP3eFdYAQVmARaD1ROywyqVTjnut9eVVl309mAw&oe=65C71EC8'
+                                            width="100%" height="70px" style="filter:blur(10px); ">
+                                        <div class="text-card">
+
+                                            <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                            <a href="#"
+                                                class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- s 4 -->
+
+                                    <div class="col-xl-3 me-2  d-xl-flex d-lg-none d-sm-flex d-none story card"
+                                        style="height: 180px;">
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/364153661_985249142597560_5880319406816727446_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=yZoGXUCtJi8AX8ju5_F&_nc_oc=AQnDiuK1Q6F7OUs2mAOO4vZw20wZK0J_jh_zoDE1N_hnu0X-YoEM3MgDyZOQl0WdpnY&_nc_ht=scontent.fcai21-3.fna&oh=00_AfAZ3qDVklTWH65OAVGnNt6C93C0JvbjXG7Xkrv97sGX6Q&oe=65C6E5CB"
+                                            class="card-img-top   rounded-bottom-0" alt="story posts"
+                                            style="min-height: 100px; object-fit:cover" />
+                                        <img class="card-body p-0 col-12 rounded-bottom-3  m-auto"
+                                            src='https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/364153661_985249142597560_5880319406816727446_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=yZoGXUCtJi8AX8ju5_F&_nc_oc=AQnDiuK1Q6F7OUs2mAOO4vZw20wZK0J_jh_zoDE1N_hnu0X-YoEM3MgDyZOQl0WdpnY&_nc_ht=scontent.fcai21-3.fna&oh=00_AfAZ3qDVklTWH65OAVGnNt6C93C0JvbjXG7Xkrv97sGX6Q&oe=65C6E5CB'
+                                            width="100%" height="70px" style="filter:blur(10px); ">
+
+                                        <div class="text-card p-1">
+
+                                            <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                            <a href="#"
+                                                class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-12 d-flex justify-content position-relative  ">
+
+                                    <!-- s 2 -->
+                                    <div class="col-xl-3 me-2 col-lg-4 story card" style="height: 180px;">
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/420089713_772069301520406_661932808539505884_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=jrewVzRZ_DMAX_icv5h&_nc_ht=scontent.fcai21-3.fna&oh=00_AfAv_0eZdioFH4jpVNLOMDFtOgYDwM-8sqrem4ROJw1xug&oe=65C7A0B0"
+                                            class="card-img-top   rounded-bottom-0" alt="story posts"
+                                            style="min-height: 100px; object-fit:cover" />
+                                        <img class="card-body p-0 col-12 rounded-bottom-3  m-auto"
+                                            src='https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/420089713_772069301520406_661932808539505884_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=jrewVzRZ_DMAX_icv5h&_nc_ht=scontent.fcai21-3.fna&oh=00_AfAv_0eZdioFH4jpVNLOMDFtOgYDwM-8sqrem4ROJw1xug&oe=65C7A0B0'
+                                            width="100%" height="70px" style="filter:blur(10px); ">
+
+                                        <div class="text-card">
+
+                                            <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                            <a href="#"
+                                                class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                        </div>
+
+                                    </div>
+                                    <!-- s 3 -->
+                                    <div class="col-xl-3 me-2 col-lg-4 story card" style="height: 180px;">
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/327459624_569649441468229_3616288363152425235_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=1NOz8G0wtyMAX_aOzvI&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDezZXUGYsXJD8DiJnOQGrHvz2w8gxWQyGFzMNXuIF7uw&oe=65C6D776"
+                                            class="card-img-top   rounded-bottom-0" alt="story posts"
+                                            style="min-height: 100px; object-fit:cover" />
+                                        <img class="card-body p-0 col-12 rounded-bottom-3  m-auto"
+                                            src='https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/327459624_569649441468229_3616288363152425235_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=1NOz8G0wtyMAX_aOzvI&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDezZXUGYsXJD8DiJnOQGrHvz2w8gxWQyGFzMNXuIF7uw&oe=65C6D776'
+                                            width="100%" height="70px" style="filter:blur(10px); ">
+
+                                        <div class="text-card">
+
+                                            <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                            <a href="#"
+                                                class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                        </div>
+
+                                    </div>
+                                    <!-- s 4 -->
+
+                                    <div class="col-xl-3 me-2 col-lg-4 story card" style="height: 180px;">
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/400750890_894886704973844_9189471475105718256_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=zA23FNQYs_MAX-zR5pm&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDfX85AP3eFdYAQVmARaD1ROywyqVTjnut9eVVl309mAw&oe=65C71EC8"
+                                            class="card-img-top   rounded-bottom-0" alt="story posts"
+                                            style="min-height: 100px; object-fit:cover" />
+                                        <img class="card-body p-0 col-12 rounded-bottom-3  m-auto"
+                                            src='https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/400750890_894886704973844_9189471475105718256_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=zA23FNQYs_MAX-zR5pm&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDfX85AP3eFdYAQVmARaD1ROywyqVTjnut9eVVl309mAw&oe=65C71EC8'
+                                            width="100%" height="70px" style="filter:blur(10px); ">
+                                        <div class="text-card">
+
+                                            <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                            <a href="#"
+                                                class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- s 4 -->
+
+                                    <div class="col-xl-3 me-2  d-xl-flex d-lg-none d-sm-flex d-none story card"
+                                        style="height: 180px;">
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/364153661_985249142597560_5880319406816727446_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=yZoGXUCtJi8AX8ju5_F&_nc_oc=AQnDiuK1Q6F7OUs2mAOO4vZw20wZK0J_jh_zoDE1N_hnu0X-YoEM3MgDyZOQl0WdpnY&_nc_ht=scontent.fcai21-3.fna&oh=00_AfAZ3qDVklTWH65OAVGnNt6C93C0JvbjXG7Xkrv97sGX6Q&oe=65C6E5CB"
+                                            class="card-img-top   rounded-bottom-0" alt="story posts"
+                                            style="min-height: 100px; object-fit:cover" />
+                                        <img class="card-body p-0 col-12 rounded-bottom-3  m-auto"
+                                            src='https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/364153661_985249142597560_5880319406816727446_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=yZoGXUCtJi8AX8ju5_F&_nc_oc=AQnDiuK1Q6F7OUs2mAOO4vZw20wZK0J_jh_zoDE1N_hnu0X-YoEM3MgDyZOQl0WdpnY&_nc_ht=scontent.fcai21-3.fna&oh=00_AfAZ3qDVklTWH65OAVGnNt6C93C0JvbjXG7Xkrv97sGX6Q&oe=65C6E5CB'
+                                            width="100%" height="70px" style="filter:blur(10px); ">
+
+                                        <div class="text-card p-1">
+
+                                            <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                            <a href="#"
+                                                class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev  " type="button" data-bs-target="#carouselExampleRide"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleRide"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div class="me-0 my-1 px-2 ">
+
+                    <p class="my-2 mx-1 fw-bold fs-4"> Top picks for you </p>
+
+
+                    <div class="col-12 d-flex my-3 ">
+
+                        <div class="col-3">
+
+                            <div class="story me-2 card" type="button">
+                                <img src="https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2082-0/75936603_727300951088200_6512480364286443520_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=03cc09&_nc_ohc=4r_SC_BvpW0AX8XmT7i&_nc_ht=scontent.fcai16-1.fna&oh=00_AfA2vWTNaAtAzF8zHGwIMVCB3IIp3OlHovwnAJMfX-iwWg&oe=65C6C855"
+                                    class="card-img-top shadow-none  rounded-bottom-0" alt="story posts"
+                                    style="height:287px ;min-height:190px; object-fit: cover" />
+                                <img class="card-body p-0 col-10 rounded-bottom-3  m-auto"
+                                    src='https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2082-0/75936603_727300951088200_6512480364286443520_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=03cc09&_nc_ohc=4r_SC_BvpW0AX8XmT7i&_nc_ht=scontent.fcai16-1.fna&oh=00_AfA2vWTNaAtAzF8zHGwIMVCB3IIp3OlHovwnAJMfX-iwWg&oe=65C6C855'
+                                    width="100%" height="70px" style="filter:blur(20px); ">
+
+                                <div class="t-text-card">
+
+                                    <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                    <a href="#" class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+                        <div id="carouselExample" class="col-9 carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="col-12">
+                                        <!-- 1 -->
+                                        <div class="d-flex mb-2 ">
+                                            <!-- g1 -->
+
+                                            <div class="col-xl-4 me-2 col-lg-6 story card" style="height: 180px;">
+                                                <img src="https://scontent.fcai21-4.fna.fbcdn.net/v/t39.2081-6/363780819_590074973332980_1155364773294611521_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=vpmPzkx2hZsAX8qPbr4&_nc_ht=scontent.fcai21-4.fna&oh=00_AfB9-G_VG6BvnhB9jeCK1NppM1OBZwJaMUI4Lmn8KYqXWw&oe=65C62CFB"
+                                                    class="card-img-top   rounded-bottom-0" alt="story posts"
+                                                    style="min-height: 100px; object-fit:cover" />
+                                                <img class="card-body p-0 col-12 rounded-bottom-3  m-auto"
+                                                    src='https://scontent.fcai21-4.fna.fbcdn.net/v/t39.2081-6/363780819_590074973332980_1155364773294611521_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=vpmPzkx2hZsAX8qPbr4&_nc_ht=scontent.fcai21-4.fna&oh=00_AfB9-G_VG6BvnhB9jeCK1NppM1OBZwJaMUI4Lmn8KYqXWw&oe=65C62CFB'
+                                                    width="100%" height="70px" style="filter:blur(10px);">
+
+
+
+                                                <div class="text-card">
+
+                                                    <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                                    <a href="#"
+                                                        class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- g2 -->
+                                            <div class="col-xl-4 me-2 col-lg-6 story card" style="height: 180px;">
+                                                <img src="https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/36236543_2077908005808853_8809994117653200896_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=bt47e3xzZCMAX-H-UbS&_nc_ht=scontent.fcai16-1.fna&oh=00_AfCpm6xb8iuSEr7SvTToKewQanIDrerebI0bQeeARWAzwA&oe=65C78399"
+                                                    class="card-img-top   rounded-bottom-0" alt="story posts"
+                                                    style="min-height: 100px; object-fit:cover" />
+                                                <img class="card-body p-0 col-10 rounded-bottom-3  m-auto"
+                                                    src='https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/36236543_2077908005808853_8809994117653200896_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=bt47e3xzZCMAX-H-UbS&_nc_ht=scontent.fcai16-1.fna&oh=00_AfCpm6xb8iuSEr7SvTToKewQanIDrerebI0bQeeARWAzwA&oe=65C78399'
+                                                    width="100%" height="70px" style="filter:blur(10px); ">
+
+
+
+                                                <div class="text-card">
+
+                                                    <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                                    <a href="#"
+                                                        class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- g3 -->
+
+                                            <div class="col-xl-4 me-2  d-xl-flex d-lg-none  d-none story  card"
+                                                style="height: 180px;">
+                                                <img src="https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/67885464_2402141250075265_972168188206776320_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=PuNApo23EnsAX87IV07&_nc_oc=AQnTEn9hblECS2UPw78FdPixFT9OY_eAA9rR8jBSTBbvm8OoBtDTgPQFdzb2O82F9V0&_nc_ht=scontent.fcai16-1.fna&oh=00_AfCuB7pNAffQN7mQTq8BT72QuqEJKvA_z0HF3x6T51HVDg&oe=65C791C3"
+                                                    class="card-img-top   rounded-bottom-0" alt="story posts"
+                                                    style="min-height: 100px; object-fit:cover" />
+                                                <img class="card-body p-0 col-10 rounded-bottom-3  m-auto"
+                                                    src='https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/67885464_2402141250075265_972168188206776320_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=PuNApo23EnsAX87IV07&_nc_oc=AQnTEn9hblECS2UPw78FdPixFT9OY_eAA9rR8jBSTBbvm8OoBtDTgPQFdzb2O82F9V0&_nc_ht=scontent.fcai16-1.fna&oh=00_AfCuB7pNAffQN7mQTq8BT72QuqEJKvA_z0HF3x6T51HVDg&oe=65C791C3'
+                                                    width="100%" height="70px" style="filter:blur(10px);">
+
+
+
+                                                <div class="text-card">
+
+                                                    <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                                    <a href="#"
+                                                        class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <!-- 2 -->
+                                        <div class="d-flex mb-2">
+                                            <!-- g1 -->
+                                            <div class="col-xl-4 me-2 story col-lg-6  card" style="height: 180px;">
+                                                <img src="https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/356697400_794063292189493_1832212690211644860_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=zCdlBcaUKaEAX-vtopA&_nc_ht=scontent.fcai16-1.fna&oh=00_AfD8TifauwW_GaG-3ob5cI7oSFr9E_-NaJ61xsaD3FVe_w&oe=65C693E6"
+                                                    class="card-img-top   rounded-bottom-0" alt="story posts"
+                                                    style="min-height: 100px; object-fit:cover" />
+                                                <img class="card-body p-0 col-10 rounded-bottom-3  m-auto"
+                                                    src='https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/356697400_794063292189493_1832212690211644860_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=zCdlBcaUKaEAX-vtopA&_nc_ht=scontent.fcai16-1.fna&oh=00_AfD8TifauwW_GaG-3ob5cI7oSFr9E_-NaJ61xsaD3FVe_w&oe=65C693E6'
+                                                    width="100%" height="80px" style="filter:blur(10px);">
+
+
+
+                                                <div class="text-card">
+
+                                                    <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                                    <a href="#"
+                                                        class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- g2 -->
+                                            <div class="col-xl-4 me-2 story col-lg-6  card" style="height: 180px;">
+                                                <img src="https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/412612955_1412119453021919_7087784931559844397_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=qm_n0eI-jP0AX9JgTzW&_nc_ht=scontent.fcai16-1.fna&oh=00_AfDTsdEPGUVyTJtt_K5GpK5V7MAATPwrlhuxxiGHeKzIeQ&oe=65C7460B"
+                                                    class="card-img-top   rounded-bottom-0" alt="story posts"
+                                                    style="min-height: 100px; object-fit:cover" />
+                                                <img class="card-body p-0 col-10 rounded-bottom-3  m-auto"
+                                                    src='https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/412612955_1412119453021919_7087784931559844397_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=qm_n0eI-jP0AX9JgTzW&_nc_ht=scontent.fcai16-1.fna&oh=00_AfDTsdEPGUVyTJtt_K5GpK5V7MAATPwrlhuxxiGHeKzIeQ&oe=65C7460B'
+                                                    width="100%" height="60px" style="filter:blur(20px);">
+
+
+
+                                                <div class="text-card">
+
+                                                    <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                                    <a href="#"
+                                                        class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- g3 -->
+
+                                            <div class="col-xl-4 me-2 d-xl-flex d-lg-none d-none story card"
+                                                style="height: 180px;">
+                                                <img src="https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/305937623_872219343746319_2615803324332749731_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=w46Jblhbm9kAX-wlFd8&_nc_ht=scontent.fcai16-1.fna&oh=00_AfCT9kEnbCsBDivvblLJNg56QiiXbktji7taxXab2Ln10w&oe=65C749D1"
+                                                    class="card-img-top shadow-none  rounded-bottom-0" alt="story posts"
+                                                    style="min-height: 100px; object-fit:cover" />
+                                                <img class="card-body p-0 col-10 rounded-bottom-3  m-auto"
+                                                    src='https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/305937623_872219343746319_2615803324332749731_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=w46Jblhbm9kAX-wlFd8&_nc_ht=scontent.fcai16-1.fna&oh=00_AfCT9kEnbCsBDivvblLJNg56QiiXbktji7taxXab2Ln10w&oe=65C749D1'
+                                                    width="100%" height="60px" style="filter:blur(20px);">
+
+
+
+                                                <div class="text-card">
+
+                                                    <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                                    <a href="#"
+                                                        class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-12">
+                                        <!-- 1 -->
+                                        <div class="d-flex mb-2 ">
+                                            <!-- g1 -->
+
+                                            <div class="col-xl-4 me-2 col-lg-6 story card" style="height: 180px;">
+                                                <img src="https://scontent.fcai21-4.fna.fbcdn.net/v/t39.2081-6/363780819_590074973332980_1155364773294611521_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=vpmPzkx2hZsAX8qPbr4&_nc_ht=scontent.fcai21-4.fna&oh=00_AfB9-G_VG6BvnhB9jeCK1NppM1OBZwJaMUI4Lmn8KYqXWw&oe=65C62CFB"
+                                                    class="card-img-top   rounded-bottom-0" alt="story posts"
+                                                    style="min-height: 100px; object-fit:cover" />
+                                                <img class="card-body p-0 col-12 rounded-bottom-3  m-auto"
+                                                    src='https://scontent.fcai21-4.fna.fbcdn.net/v/t39.2081-6/363780819_590074973332980_1155364773294611521_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=vpmPzkx2hZsAX8qPbr4&_nc_ht=scontent.fcai21-4.fna&oh=00_AfB9-G_VG6BvnhB9jeCK1NppM1OBZwJaMUI4Lmn8KYqXWw&oe=65C62CFB'
+                                                    width="100%" height="70px" style="filter:blur(10px);">
+
+
+
+                                                <div class="text-card">
+
+                                                    <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                                    <a href="#"
+                                                        class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- g2 -->
+                                            <div class="col-xl-4 me-2 col-lg-6 story card" style="height: 180px;">
+                                                <img src="https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/36236543_2077908005808853_8809994117653200896_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=bt47e3xzZCMAX-H-UbS&_nc_ht=scontent.fcai16-1.fna&oh=00_AfCpm6xb8iuSEr7SvTToKewQanIDrerebI0bQeeARWAzwA&oe=65C78399"
+                                                    class="card-img-top   rounded-bottom-0" alt="story posts"
+                                                    style="min-height: 100px; object-fit:cover" />
+                                                <img class="card-body p-0 col-10 rounded-bottom-3  m-auto"
+                                                    src='https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/36236543_2077908005808853_8809994117653200896_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=bt47e3xzZCMAX-H-UbS&_nc_ht=scontent.fcai16-1.fna&oh=00_AfCpm6xb8iuSEr7SvTToKewQanIDrerebI0bQeeARWAzwA&oe=65C78399'
+                                                    width="100%" height="70px" style="filter:blur(10px); ">
+
+
+
+                                                <div class="text-card">
+
+                                                    <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                                    <a href="#"
+                                                        class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- g3 -->
+
+                                            <div class="col-xl-4 me-2  d-xl-flex d-lg-none  d-none story  card"
+                                                style="height: 180px;">
+                                                <img src="https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/67885464_2402141250075265_972168188206776320_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=PuNApo23EnsAX87IV07&_nc_oc=AQnTEn9hblECS2UPw78FdPixFT9OY_eAA9rR8jBSTBbvm8OoBtDTgPQFdzb2O82F9V0&_nc_ht=scontent.fcai16-1.fna&oh=00_AfCuB7pNAffQN7mQTq8BT72QuqEJKvA_z0HF3x6T51HVDg&oe=65C791C3"
+                                                    class="card-img-top   rounded-bottom-0" alt="story posts"
+                                                    style="min-height: 100px; object-fit:cover" />
+                                                <img class="card-body p-0 col-10 rounded-bottom-3  m-auto"
+                                                    src='https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/67885464_2402141250075265_972168188206776320_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=PuNApo23EnsAX87IV07&_nc_oc=AQnTEn9hblECS2UPw78FdPixFT9OY_eAA9rR8jBSTBbvm8OoBtDTgPQFdzb2O82F9V0&_nc_ht=scontent.fcai16-1.fna&oh=00_AfCuB7pNAffQN7mQTq8BT72QuqEJKvA_z0HF3x6T51HVDg&oe=65C791C3'
+                                                    width="100%" height="70px" style="filter:blur(10px);">
+
+
+
+                                                <div class="text-card">
+
+                                                    <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                                    <a href="#"
+                                                        class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <!-- 2 -->
+                                        <div class="d-flex mb-2">
+                                            <!-- g1 -->
+                                            <div class="col-xl-4 me-2 story col-lg-6  card" style="height: 180px;">
+                                                <img src="https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/356697400_794063292189493_1832212690211644860_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=zCdlBcaUKaEAX-vtopA&_nc_ht=scontent.fcai16-1.fna&oh=00_AfD8TifauwW_GaG-3ob5cI7oSFr9E_-NaJ61xsaD3FVe_w&oe=65C693E6"
+                                                    class="card-img-top   rounded-bottom-0" alt="story posts"
+                                                    style="min-height: 100px; object-fit:cover" />
+                                                <img class="card-body p-0 col-10 rounded-bottom-3  m-auto"
+                                                    src='https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/356697400_794063292189493_1832212690211644860_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=zCdlBcaUKaEAX-vtopA&_nc_ht=scontent.fcai16-1.fna&oh=00_AfD8TifauwW_GaG-3ob5cI7oSFr9E_-NaJ61xsaD3FVe_w&oe=65C693E6'
+                                                    width="100%" height="80px" style="filter:blur(10px);">
+
+
+
+                                                <div class="text-card">
+
+                                                    <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                                    <a href="#"
+                                                        class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- g2 -->
+                                            <div class="col-xl-4 me-2 story col-lg-6  card" style="height: 180px;">
+                                                <img src="https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/412612955_1412119453021919_7087784931559844397_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=qm_n0eI-jP0AX9JgTzW&_nc_ht=scontent.fcai16-1.fna&oh=00_AfDTsdEPGUVyTJtt_K5GpK5V7MAATPwrlhuxxiGHeKzIeQ&oe=65C7460B"
+                                                    class="card-img-top   rounded-bottom-0" alt="story posts"
+                                                    style="min-height: 100px; object-fit:cover" />
+                                                <img class="card-body p-0 col-10 rounded-bottom-3  m-auto"
+                                                    src='https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/412612955_1412119453021919_7087784931559844397_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=qm_n0eI-jP0AX9JgTzW&_nc_ht=scontent.fcai16-1.fna&oh=00_AfDTsdEPGUVyTJtt_K5GpK5V7MAATPwrlhuxxiGHeKzIeQ&oe=65C7460B'
+                                                    width="100%" height="60px" style="filter:blur(20px);">
+
+
+
+                                                <div class="text-card">
+
+                                                    <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                                    <a href="#"
+                                                        class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- g3 -->
+
+                                            <div class="col-xl-4 me-2 d-xl-flex d-lg-none d-none story card"
+                                                style="height: 180px;">
+                                                <img src="https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/305937623_872219343746319_2615803324332749731_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=w46Jblhbm9kAX-wlFd8&_nc_ht=scontent.fcai16-1.fna&oh=00_AfCT9kEnbCsBDivvblLJNg56QiiXbktji7taxXab2Ln10w&oe=65C749D1"
+                                                    class="card-img-top shadow-none  rounded-bottom-0" alt="story posts"
+                                                    style="min-height: 100px; object-fit:cover" />
+                                                <img class="card-body p-0 col-10 rounded-bottom-3  m-auto"
+                                                    src='https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/305937623_872219343746319_2615803324332749731_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=w46Jblhbm9kAX-wlFd8&_nc_ht=scontent.fcai16-1.fna&oh=00_AfCT9kEnbCsBDivvblLJNg56QiiXbktji7taxXab2Ln10w&oe=65C749D1'
+                                                    width="100%" height="60px" style="filter:blur(20px);">
+
+
+
+                                                <div class="text-card">
+
+                                                    <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                                    <a href="#"
+                                                        class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-12">
+                                        <!-- 1 -->
+                                        <div class="d-flex mb-2 ">
+                                            <!-- g1 -->
+
+                                            <div class="col-xl-4 me-2 col-lg-6 story card" style="height: 180px;">
+                                                <img src="https://scontent.fcai21-4.fna.fbcdn.net/v/t39.2081-6/363780819_590074973332980_1155364773294611521_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=vpmPzkx2hZsAX8qPbr4&_nc_ht=scontent.fcai21-4.fna&oh=00_AfB9-G_VG6BvnhB9jeCK1NppM1OBZwJaMUI4Lmn8KYqXWw&oe=65C62CFB"
+                                                    class="card-img-top   rounded-bottom-0" alt="story posts"
+                                                    style="min-height: 100px; object-fit:cover" />
+                                                <img class="card-body p-0 col-12 rounded-bottom-3  m-auto"
+                                                    src='https://scontent.fcai21-4.fna.fbcdn.net/v/t39.2081-6/363780819_590074973332980_1155364773294611521_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=vpmPzkx2hZsAX8qPbr4&_nc_ht=scontent.fcai21-4.fna&oh=00_AfB9-G_VG6BvnhB9jeCK1NppM1OBZwJaMUI4Lmn8KYqXWw&oe=65C62CFB'
+                                                    width="100%" height="70px" style="filter:blur(10px);">
+
+
+
+                                                <div class="text-card">
+
+                                                    <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                                    <a href="#"
+                                                        class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- g2 -->
+                                            <div class="col-xl-4 me-2 col-lg-6 story card" style="height: 180px;">
+                                                <img src="https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/36236543_2077908005808853_8809994117653200896_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=bt47e3xzZCMAX-H-UbS&_nc_ht=scontent.fcai16-1.fna&oh=00_AfCpm6xb8iuSEr7SvTToKewQanIDrerebI0bQeeARWAzwA&oe=65C78399"
+                                                    class="card-img-top   rounded-bottom-0" alt="story posts"
+                                                    style="min-height: 100px; object-fit:cover" />
+                                                <img class="card-body p-0 col-10 rounded-bottom-3  m-auto"
+                                                    src='https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/36236543_2077908005808853_8809994117653200896_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=bt47e3xzZCMAX-H-UbS&_nc_ht=scontent.fcai16-1.fna&oh=00_AfCpm6xb8iuSEr7SvTToKewQanIDrerebI0bQeeARWAzwA&oe=65C78399'
+                                                    width="100%" height="70px" style="filter:blur(10px); ">
+
+
+
+                                                <div class="text-card">
+
+                                                    <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                                    <a href="#"
+                                                        class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- g3 -->
+
+                                            <div class="col-xl-4 me-2  d-xl-flex d-lg-none  d-none story  card"
+                                                style="height: 180px;">
+                                                <img src="https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/67885464_2402141250075265_972168188206776320_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=PuNApo23EnsAX87IV07&_nc_oc=AQnTEn9hblECS2UPw78FdPixFT9OY_eAA9rR8jBSTBbvm8OoBtDTgPQFdzb2O82F9V0&_nc_ht=scontent.fcai16-1.fna&oh=00_AfCuB7pNAffQN7mQTq8BT72QuqEJKvA_z0HF3x6T51HVDg&oe=65C791C3"
+                                                    class="card-img-top   rounded-bottom-0" alt="story posts"
+                                                    style="min-height: 100px; object-fit:cover" />
+                                                <img class="card-body p-0 col-10 rounded-bottom-3  m-auto"
+                                                    src='https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/67885464_2402141250075265_972168188206776320_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=PuNApo23EnsAX87IV07&_nc_oc=AQnTEn9hblECS2UPw78FdPixFT9OY_eAA9rR8jBSTBbvm8OoBtDTgPQFdzb2O82F9V0&_nc_ht=scontent.fcai16-1.fna&oh=00_AfCuB7pNAffQN7mQTq8BT72QuqEJKvA_z0HF3x6T51HVDg&oe=65C791C3'
+                                                    width="100%" height="70px" style="filter:blur(10px);">
+
+
+
+                                                <div class="text-card">
+
+                                                    <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                                    <a href="#"
+                                                        class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <!-- 2 -->
+                                        <div class="d-flex mb-2">
+                                            <!-- g1 -->
+                                            <div class="col-xl-4 me-2 story col-lg-6  card" style="height: 180px;">
+                                                <img src="https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/356697400_794063292189493_1832212690211644860_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=zCdlBcaUKaEAX-vtopA&_nc_ht=scontent.fcai16-1.fna&oh=00_AfD8TifauwW_GaG-3ob5cI7oSFr9E_-NaJ61xsaD3FVe_w&oe=65C693E6"
+                                                    class="card-img-top   rounded-bottom-0" alt="story posts"
+                                                    style="min-height: 100px; object-fit:cover" />
+                                                <img class="card-body p-0 col-10 rounded-bottom-3  m-auto"
+                                                    src='https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/356697400_794063292189493_1832212690211644860_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=zCdlBcaUKaEAX-vtopA&_nc_ht=scontent.fcai16-1.fna&oh=00_AfD8TifauwW_GaG-3ob5cI7oSFr9E_-NaJ61xsaD3FVe_w&oe=65C693E6'
+                                                    width="100%" height="80px" style="filter:blur(10px);">
+
+
+
+                                                <div class="text-card">
+
+                                                    <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                                    <a href="#"
+                                                        class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- g2 -->
+                                            <div class="col-xl-4 me-2 story col-lg-6  card" style="height: 180px;">
+                                                <img src="https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/412612955_1412119453021919_7087784931559844397_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=qm_n0eI-jP0AX9JgTzW&_nc_ht=scontent.fcai16-1.fna&oh=00_AfDTsdEPGUVyTJtt_K5GpK5V7MAATPwrlhuxxiGHeKzIeQ&oe=65C7460B"
+                                                    class="card-img-top   rounded-bottom-0" alt="story posts"
+                                                    style="min-height: 100px; object-fit:cover" />
+                                                <img class="card-body p-0 col-10 rounded-bottom-3  m-auto"
+                                                    src='https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/412612955_1412119453021919_7087784931559844397_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=qm_n0eI-jP0AX9JgTzW&_nc_ht=scontent.fcai16-1.fna&oh=00_AfDTsdEPGUVyTJtt_K5GpK5V7MAATPwrlhuxxiGHeKzIeQ&oe=65C7460B'
+                                                    width="100%" height="60px" style="filter:blur(20px);">
+
+
+
+                                                <div class="text-card">
+
+                                                    <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                                    <a href="#"
+                                                        class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- g3 -->
+
+                                            <div class="col-xl-4 me-2 d-xl-flex d-lg-none d-none story card"
+                                                style="height: 180px;">
+                                                <img src="https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/305937623_872219343746319_2615803324332749731_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=w46Jblhbm9kAX-wlFd8&_nc_ht=scontent.fcai16-1.fna&oh=00_AfCT9kEnbCsBDivvblLJNg56QiiXbktji7taxXab2Ln10w&oe=65C749D1"
+                                                    class="card-img-top shadow-none  rounded-bottom-0" alt="story posts"
+                                                    style="min-height: 100px; object-fit:cover" />
+                                                <img class="card-body p-0 col-10 rounded-bottom-3  m-auto"
+                                                    src='https://scontent.fcai16-1.fna.fbcdn.net/v/t39.2081-6/305937623_872219343746319_2615803324332749731_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=w46Jblhbm9kAX-wlFd8&_nc_ht=scontent.fcai16-1.fna&oh=00_AfCT9kEnbCsBDivvblLJNg56QiiXbktji7taxXab2Ln10w&oe=65C749D1'
+                                                    width="100%" height="60px" style="filter:blur(20px);">
+
+
+
+                                                <div class="text-card">
+
+                                                    <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                                    <a href="#"
+                                                        class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Sport</a>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="row mt-1 mx-1">
+                    <p class="my-1  fw-bold fs-4">Happening now </p>
+
+
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <div class=" col-12 d-flex ">
+
+                                    <div class="col-xl-3 me-2 col-lg-4  card me-2">
+                                        <div class="card-body p-2">
+                                            <span> <img
+                                                    src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/277356472_1124731698312948_771859553962933608_n.jpg?stp=c0.0.193.193a_dst-jpg_p192x192&_nc_cat=1&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=Q-hktraKIqkAX_xc01W&_nc_ht=scontent.fcai21-3.fna&oh=00_AfAdcmz9Zstj6Kay7M3LZuW9EkdalteYhmK_1oqe_Y_RBA&oe=65C75E17"
+                                                    width="20px" height="20px"> Chess</span>
+                                        </div>
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An9GJshB377NxOzGBWbwXV1UDucySUaLuWr6WHyLZ8LfKiWjaAfNdvlAv4HDt9AVNAhlW8szMrZE0crzAKgVlZ7RkuJA94OK0HLUpzfbV84-dB9Gk6GB29mk3sR-UT_vY6aF?stp=p312x192&ccb=10-5&oh=00_AfDU3SjbmoSNGA_7uPzasGnHDAbZz22Ge4oMLjizTTqvKQ&oe=65E9A4A0&_nc_sid=73a32d"
+                                            class="card-img-top rounded-top-0 " alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text"><b> Sord</b> title <b>make up</b> the bulk of the
+                                                card's
+                                                content.
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-xl-3 me-2 col-lg-4 card me-2">
+                                        <div class="card-body p-2">
+                                            <span> <img
+                                                    src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/34297421_2109992282618802_1683965129533685760_n.png?stp=c0.0.193.193a_dst-png_p192x192&_nc_cat=1&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=md3KkwJ0xIsAX8vMZgZ&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDFyIiD81tIsvsSXA-12viBqbfXDVN6R03vcKnVqxRg_A&oe=65C6A558"
+                                                    width="20px" height="20px"> Caro-gomko</span>
+                                        </div>
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An_ZVEWqJFzesa0BFTQGTEoOY_YoIY_AWPDkdzxuxML_uIdIa6iIf4P7O8n0wehQM2pOip07ZuRqbf3fj4li5MJWjZAYne71vOUawo5yK8wt0SqpjUBVyvr6eD_xyuy_JpcY?stp=p312x192&ccb=10-5&oh=00_AfAb_L1h9Ukewf1F5br5ST7kO5xIPkalwSP-phnFDwwm-g&oe=65E9AFA2&_nc_sid=73a32d"
+                                            class="card-img-top rounded-top-0 " alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text"><b> Sord</b> title <b>make up</b> the bulk of the
+                                                card's
+                                                content.
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-xl-3 me-2 col-lg-4 card me-2">
+                                        <div class="card-body p-2">
+                                            <span> <img
+                                                    src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/381439330_2584462281704364_4851071848438173500_n.jpg?stp=c0.0.193.193a_dst-jpg_p192x192&_nc_cat=1&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=mqeHFCy-y1YAX8zc-_1&_nc_ht=scontent.fcai21-3.fna&oh=00_AfB6yRphZ6wU-SLB9SqmobCsoERGSFFqVnk35utpFUVjeA&oe=65C7182E"
+                                                    width="20px" height="20px"> Good master</span>
+                                        </div>
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An-a3vvkSLdZQ3czN811Tl97LCploIiKlnNN7Hjm7H3w0APrCBGe3xbsCFBC6FYJFmWOPcWHBrrDXFybmSL4xH5knCKn63hVuntlIQrKiwMEUGrovUFxVGy_ljN4ikgbsTfU?stp=p312x192&ccb=10-5&oh=00_AfBjDLlFfYZEDWv2LY3aDFLQa54NWyp66ax4tINbtEJgrg&oe=65E9BAE5&_nc_sid=73a32d"
+                                            class="card-img-top rounded-top-0 " alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text"><b> Sord</b> title <b>make up</b> the bulk of the
+                                                card's
+                                                content.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-3 me-2  d-xl-flex d-lg-none  d-none card me-2">
+                                        <div class="card-body p-2">
+                                            <span> <img
+                                                    src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/184425536_4161896847204848_874448615352205395_n.png?stp=c0.0.193.193a_dst-png_p192x192&_nc_cat=1&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=t9TGr6_SpcsAX994m5Q&_nc_ht=scontent.fcai21-3.fna&oh=00_AfBYmwBfnEgsnuaYDiuYDVX_uGy-JTBk1Skl_gURbr-6vQ&oe=65C7D1C0"
+                                                    width="20px" height="20px"> Hearts online</span>
+                                        </div>
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An9H9yQ8x0YgJI7T0aD_bUfu0krUE6KjXrv7pc4Oq0Zg0xdXTClS6-cP6ofg1RO6FxpBaQ1TKPJvcA5aT-urnGFR8WUc_uIjtVjYFXbMTyCcXsYoWNLUc49SQCbRZlcOJ2RHpA?stp=p312x192&ccb=10-5&oh=00_AfAwh_sW-FcbNK08TIzVhXPit4s57wByMXO_ErL4x97PKw&oe=65E9AFB2&_nc_sid=73a32d"
+                                            class="card-img-top rounded-top-0 " alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text"><b> Sord</b> title <b>make up</b> the bulk of the
+                                                card's
+                                                content.
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <div class=" col-12 d-flex ">
+
+                                    <div class="col-xl-3 me-2 col-lg-4  card me-2">
+                                        <div class="card-body p-2">
+                                            <span> <img
+                                                    src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/277356472_1124731698312948_771859553962933608_n.jpg?stp=c0.0.193.193a_dst-jpg_p192x192&_nc_cat=1&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=Q-hktraKIqkAX_xc01W&_nc_ht=scontent.fcai21-3.fna&oh=00_AfAdcmz9Zstj6Kay7M3LZuW9EkdalteYhmK_1oqe_Y_RBA&oe=65C75E17"
+                                                    width="20px" height="20px"> Chess</span>
+                                        </div>
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An9GJshB377NxOzGBWbwXV1UDucySUaLuWr6WHyLZ8LfKiWjaAfNdvlAv4HDt9AVNAhlW8szMrZE0crzAKgVlZ7RkuJA94OK0HLUpzfbV84-dB9Gk6GB29mk3sR-UT_vY6aF?stp=p312x192&ccb=10-5&oh=00_AfDU3SjbmoSNGA_7uPzasGnHDAbZz22Ge4oMLjizTTqvKQ&oe=65E9A4A0&_nc_sid=73a32d"
+                                            class="card-img-top rounded-top-0 " alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text"><b> Sord</b> title <b>make up</b> the bulk of the
+                                                card's
+                                                content.
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-xl-3 me-2 col-lg-4 card me-2">
+                                        <div class="card-body p-2">
+                                            <span> <img
+                                                    src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/34297421_2109992282618802_1683965129533685760_n.png?stp=c0.0.193.193a_dst-png_p192x192&_nc_cat=1&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=md3KkwJ0xIsAX8vMZgZ&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDFyIiD81tIsvsSXA-12viBqbfXDVN6R03vcKnVqxRg_A&oe=65C6A558"
+                                                    width="20px" height="20px"> Caro-gomko</span>
+                                        </div>
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An_ZVEWqJFzesa0BFTQGTEoOY_YoIY_AWPDkdzxuxML_uIdIa6iIf4P7O8n0wehQM2pOip07ZuRqbf3fj4li5MJWjZAYne71vOUawo5yK8wt0SqpjUBVyvr6eD_xyuy_JpcY?stp=p312x192&ccb=10-5&oh=00_AfAb_L1h9Ukewf1F5br5ST7kO5xIPkalwSP-phnFDwwm-g&oe=65E9AFA2&_nc_sid=73a32d"
+                                            class="card-img-top rounded-top-0 " alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text"><b> Sord</b> title <b>make up</b> the bulk of the
+                                                card's
+                                                content.
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-xl-3 me-2 col-lg-4 card me-2">
+                                        <div class="card-body p-2">
+                                            <span> <img
+                                                    src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/381439330_2584462281704364_4851071848438173500_n.jpg?stp=c0.0.193.193a_dst-jpg_p192x192&_nc_cat=1&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=mqeHFCy-y1YAX8zc-_1&_nc_ht=scontent.fcai21-3.fna&oh=00_AfB6yRphZ6wU-SLB9SqmobCsoERGSFFqVnk35utpFUVjeA&oe=65C7182E"
+                                                    width="20px" height="20px"> Good master</span>
+                                        </div>
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An-a3vvkSLdZQ3czN811Tl97LCploIiKlnNN7Hjm7H3w0APrCBGe3xbsCFBC6FYJFmWOPcWHBrrDXFybmSL4xH5knCKn63hVuntlIQrKiwMEUGrovUFxVGy_ljN4ikgbsTfU?stp=p312x192&ccb=10-5&oh=00_AfBjDLlFfYZEDWv2LY3aDFLQa54NWyp66ax4tINbtEJgrg&oe=65E9BAE5&_nc_sid=73a32d"
+                                            class="card-img-top rounded-top-0 " alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text"><b> Sord</b> title <b>make up</b> the bulk of the
+                                                card's
+                                                content.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-3 me-2  d-xl-flex d-lg-none  d-none card me-2">
+                                        <div class="card-body p-2">
+                                            <span> <img
+                                                    src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/184425536_4161896847204848_874448615352205395_n.png?stp=c0.0.193.193a_dst-png_p192x192&_nc_cat=1&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=t9TGr6_SpcsAX994m5Q&_nc_ht=scontent.fcai21-3.fna&oh=00_AfBYmwBfnEgsnuaYDiuYDVX_uGy-JTBk1Skl_gURbr-6vQ&oe=65C7D1C0"
+                                                    width="20px" height="20px"> Hearts online</span>
+                                        </div>
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An9H9yQ8x0YgJI7T0aD_bUfu0krUE6KjXrv7pc4Oq0Zg0xdXTClS6-cP6ofg1RO6FxpBaQ1TKPJvcA5aT-urnGFR8WUc_uIjtVjYFXbMTyCcXsYoWNLUc49SQCbRZlcOJ2RHpA?stp=p312x192&ccb=10-5&oh=00_AfAwh_sW-FcbNK08TIzVhXPit4s57wByMXO_ErL4x97PKw&oe=65E9AFB2&_nc_sid=73a32d"
+                                            class="card-img-top rounded-top-0 " alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text"><b> Sord</b> title <b>make up</b> the bulk of the
+                                                card's
+                                                content.
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="carousel-item">
+                                <div class=" col-12 d-flex ">
+
+                                    <div class="col-xl-3 me-2 col-lg-4  card me-2">
+                                        <div class="card-body p-2">
+                                            <span> <img
+                                                    src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/277356472_1124731698312948_771859553962933608_n.jpg?stp=c0.0.193.193a_dst-jpg_p192x192&_nc_cat=1&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=Q-hktraKIqkAX_xc01W&_nc_ht=scontent.fcai21-3.fna&oh=00_AfAdcmz9Zstj6Kay7M3LZuW9EkdalteYhmK_1oqe_Y_RBA&oe=65C75E17"
+                                                    width="20px" height="20px"> Chess</span>
+                                        </div>
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An9GJshB377NxOzGBWbwXV1UDucySUaLuWr6WHyLZ8LfKiWjaAfNdvlAv4HDt9AVNAhlW8szMrZE0crzAKgVlZ7RkuJA94OK0HLUpzfbV84-dB9Gk6GB29mk3sR-UT_vY6aF?stp=p312x192&ccb=10-5&oh=00_AfDU3SjbmoSNGA_7uPzasGnHDAbZz22Ge4oMLjizTTqvKQ&oe=65E9A4A0&_nc_sid=73a32d"
+                                            class="card-img-top rounded-top-0 " alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text"><b> Sord</b> title <b>make up</b> the bulk of the
+                                                card's
+                                                content.
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-xl-3 me-2 col-lg-4 card me-2">
+                                        <div class="card-body p-2">
+                                            <span> <img
+                                                    src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/34297421_2109992282618802_1683965129533685760_n.png?stp=c0.0.193.193a_dst-png_p192x192&_nc_cat=1&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=md3KkwJ0xIsAX8vMZgZ&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDFyIiD81tIsvsSXA-12viBqbfXDVN6R03vcKnVqxRg_A&oe=65C6A558"
+                                                    width="20px" height="20px"> Caro-gomko</span>
+                                        </div>
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An_ZVEWqJFzesa0BFTQGTEoOY_YoIY_AWPDkdzxuxML_uIdIa6iIf4P7O8n0wehQM2pOip07ZuRqbf3fj4li5MJWjZAYne71vOUawo5yK8wt0SqpjUBVyvr6eD_xyuy_JpcY?stp=p312x192&ccb=10-5&oh=00_AfAb_L1h9Ukewf1F5br5ST7kO5xIPkalwSP-phnFDwwm-g&oe=65E9AFA2&_nc_sid=73a32d"
+                                            class="card-img-top rounded-top-0 " alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text"><b> Sord</b> title <b>make up</b> the bulk of the
+                                                card's
+                                                content.
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-xl-3 me-2 col-lg-4 card me-2">
+                                        <div class="card-body p-2">
+                                            <span> <img
+                                                    src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/381439330_2584462281704364_4851071848438173500_n.jpg?stp=c0.0.193.193a_dst-jpg_p192x192&_nc_cat=1&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=mqeHFCy-y1YAX8zc-_1&_nc_ht=scontent.fcai21-3.fna&oh=00_AfB6yRphZ6wU-SLB9SqmobCsoERGSFFqVnk35utpFUVjeA&oe=65C7182E"
+                                                    width="20px" height="20px"> Good master</span>
+                                        </div>
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An-a3vvkSLdZQ3czN811Tl97LCploIiKlnNN7Hjm7H3w0APrCBGe3xbsCFBC6FYJFmWOPcWHBrrDXFybmSL4xH5knCKn63hVuntlIQrKiwMEUGrovUFxVGy_ljN4ikgbsTfU?stp=p312x192&ccb=10-5&oh=00_AfBjDLlFfYZEDWv2LY3aDFLQa54NWyp66ax4tINbtEJgrg&oe=65E9BAE5&_nc_sid=73a32d"
+                                            class="card-img-top rounded-top-0 " alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text"><b> Sord</b> title <b>make up</b> the bulk of the
+                                                card's
+                                                content.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-3 me-2  d-xl-flex d-lg-none  d-none card me-2">
+                                        <div class="card-body p-2">
+                                            <span> <img
+                                                    src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/184425536_4161896847204848_874448615352205395_n.png?stp=c0.0.193.193a_dst-png_p192x192&_nc_cat=1&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=t9TGr6_SpcsAX994m5Q&_nc_ht=scontent.fcai21-3.fna&oh=00_AfBYmwBfnEgsnuaYDiuYDVX_uGy-JTBk1Skl_gURbr-6vQ&oe=65C7D1C0"
+                                                    width="20px" height="20px"> Hearts online</span>
+                                        </div>
+                                        <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An9H9yQ8x0YgJI7T0aD_bUfu0krUE6KjXrv7pc4Oq0Zg0xdXTClS6-cP6ofg1RO6FxpBaQ1TKPJvcA5aT-urnGFR8WUc_uIjtVjYFXbMTyCcXsYoWNLUc49SQCbRZlcOJ2RHpA?stp=p312x192&ccb=10-5&oh=00_AfAwh_sW-FcbNK08TIzVhXPit4s57wByMXO_ErL4x97PKw&oe=65E9AFB2&_nc_sid=73a32d"
+                                            class="card-img-top rounded-top-0 " alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text"><b> Sord</b> title <b>make up</b> the bulk of the
+                                                card's
+                                                content.
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+                <div class="co-12 mx-1 mt-1">
+                    <p class="my-3  fw-bold fs-4">Most played games </p>
+
+
+
+
+                    <div class="col-12 d-flex ">
+                        <div class="col-xl-3 col-sm-4  story me-2 card" type="button">
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-0/273966383_1129491381148366_2293113334225839756_n.jpg?stp=dst-jpg_p400x400&_nc_cat=1&ccb=1-7&_nc_sid=03cc09&_nc_ohc=MlbzPm2dKUYAX89SLJZ&_nc_ht=scontent.fcai21-3.fna&oh=00_AfCopWAlFTJ2hTIn3O_IANypPLxiAOKxAZmuVlC43b2hCw&oe=65C66A3B"
+                                class="card-img-top shadow-none  rounded-bottom-0" alt="story posts"
+                                style="height:325px ;min-height:190px; object-fit: cover" />
+
+                            <div class="t-text-card">
+
+                                <h5 class="card-title p-0 my-2 fs-5 5">8 Ball Master</h5>
+                                <a href="#" class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-25">Sport</a>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-sm-4  story me-2 card" type="button">
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-0/412889627_915755673638944_8172405756428363832_n.jpg?stp=dst-jpg_p400x400&_nc_cat=1&ccb=1-7&_nc_sid=03cc09&_nc_ohc=kW2MrwoJGe4AX9V_uU5&_nc_ht=scontent.fcai21-3.fna&oh=00_AfAc3DSxW1GxmEaRM7xKaR980hu0D9MiGxGnN9GtZHCFSQ&oe=65C77C56"
+                                class="card-img-top shadow-none  rounded-bottom-0" alt="story posts"
+                                style="height:319px ;min-height:190px; object-fit: cover" />
+
+                            <div class="t-text-card">
+
+                                <h5 class="card-title p-0 my-2 fs-5 ">8 Ball Master</h5>
+                                <a href="#" class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-25">Sport</a>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-sm-4 story me-2 card" type="button">
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-0/387743002_3231385797000881_1423847435203565369_n.jpg?stp=dst-jpg_p400x400&_nc_cat=1&ccb=1-7&_nc_sid=03cc09&_nc_aid=0&_nc_ohc=QIi9QBGGjr8AX-l1edh&_nc_ht=scontent.fcai21-3.fna&oh=00_AfAf-Y_1vfthsdo-eX0yfesSP7Bbo7YwUdbFKFuSvb-U9g&oe=65C7C15E"
+                                class="card-img-top shadow-none  rounded-bottom-0" alt="story posts"
+                                style="height:360px ;min-height:190px; object-fit: cover" />
+
+                            <div class="t-text-card">
+
+                                <h5 class="card-title p-0 my-2 fs-5 ">8 Ball Master</h5>
+                                <a href="#" class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-25">Sport</a>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3  d-xl-flex  d-sm-none story me-2 card" type="button">
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-0/416197434_824061212693716_8737861270613899072_n.jpg?stp=dst-jpg_p400x400&_nc_cat=1&ccb=1-7&_nc_sid=03cc09&_nc_ohc=_x58s6aj5dUAX-JjCQT&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDkGgN3cRkU_iTCLNTojw06N5KDKMYwKZOYw7A4UYgoYg&oe=65C7E930"
+                                class="card-img-top shadow-none  rounded-bottom-0" alt="story posts"
+                                style="height:355px ;min-height:190px; object-fit: cover" />
+
+                            <div class="t-text-card">
+
+                                <h5 class="card-title p-0 my-2 fs-5 ">8 Ball Master</h5>
+                                <a href="#" class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-25">Sport</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="row mx-1 mt-1">
+                    <p class="my-3  fw-bold fs-4">Featured games</p>
+
+
+                    <div class="col-12 d-flex ">
+                        <div class="col-xl-3 me-2  story card" style="height: 180px;">
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/151346698_843907229491643_7433196016496244208_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=j2TdvkQdvYQAX8kE-eY&_nc_ht=scontent.fcai21-3.fna&oh=00_AfD8ysAcP9B5oGkUsDABrsNfZTI9WrbIPZP5y4Psbfpt4g&oe=65C731B8"
+                                class="card-img-top   rounded-bottom-0" alt="story posts"
+                                style="min-height: 100px; object-fit:cover" />
+                            <img class="card-body p-0 col-10 rounded-bottom-3  m-auto"
+                                src='https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/151346698_843907229491643_7433196016496244208_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=j2TdvkQdvYQAX8kE-eY&_nc_ht=scontent.fcai21-3.fna&oh=00_AfD8ysAcP9B5oGkUsDABrsNfZTI9WrbIPZP5y4Psbfpt4g&oe=65C731B8'
+                                width="100%" height="70px" style="filter:blur(10px);">
+
+
+
+                            <div class="text-card">
+
+                                <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                <a href="#" class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Play</a>
+                            </div>
+                        </div>
+
+                        <!-- g2 -->
+                        <div class="col-xl-3 me-2 story card" style="height: 180px;">
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/354066540_717011670183096_8604661906210733458_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=sJ9IhHhW00QAX_Q-YiQ&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDg_SBmdW8wl4CpMqVSbEFMawWe-meCGztxzEQCR2M0Ag&oe=65C73343"
+                                class="card-img-top   rounded-bottom-0" alt="story posts"
+                                style="min-height: 100px; object-fit:cover" />
+                            <img class="card-body p-0 col-10 rounded-bottom-3  m-auto"
+                                src='https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/354066540_717011670183096_8604661906210733458_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=sJ9IhHhW00QAX_Q-YiQ&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDg_SBmdW8wl4CpMqVSbEFMawWe-meCGztxzEQCR2M0Ag&oe=65C73343'
+                                width="100%" height="70px" style="filter:blur(10px); ">
+
+
+
+                            <div class="text-card">
+
+                                <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                <a href="#" class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Play</a>
+                            </div>
+                        </div>
+
+                        <!-- g3 -->
+
+                        <div class="col-xl-3 me-2 story  card" style="height: 180px;">
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/341668366_565994945622435_5945597795951187762_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=rFLtU90JD7oAX96ATfM&_nc_ht=scontent.fcai21-3.fna&oh=00_AfAClJLaUicR66K-u8NFc7yH_cs93-RYoTT0XnZE7eIlzQ&oe=65C69739"
+                                class="card-img-top   rounded-bottom-0" alt="story posts"
+                                style="min-height: 100px; object-fit:cover" />
+                            <img class="card-body p-0 col-10 rounded-bottom-3  m-auto"
+                                src='https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/341668366_565994945622435_5945597795951187762_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=rFLtU90JD7oAX96ATfM&_nc_ht=scontent.fcai21-3.fna&oh=00_AfAClJLaUicR66K-u8NFc7yH_cs93-RYoTT0XnZE7eIlzQ&oe=65C69739'
+                                width="100%" height="70px" style="filter:blur(10px);">
+
+
+
+                            <div class="text-card">
+
+                                <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                <a href="#" class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Play</a>
+                            </div>
+                        </div>
+
+                        <!-- g4 -->
+                        <div class="col-xl-3  d-xl-flex  d-sm-none me-2 story card" style="height: 180px;">
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/354066540_717011670183096_8604661906210733458_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=sJ9IhHhW00QAX_Q-YiQ&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDg_SBmdW8wl4CpMqVSbEFMawWe-meCGztxzEQCR2M0Ag&oe=65C73343"
+                                class="card-img-top   rounded-bottom-0" alt="story posts"
+                                style="min-height: 100px; object-fit:cover" />
+                            <img class="card-body p-0 col-10 rounded-bottom-3  m-auto"
+                                src='https://scontent.fcai21-3.fna.fbcdn.net/v/t39.2081-6/354066540_717011670183096_8604661906210733458_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=423001&_nc_ohc=sJ9IhHhW00QAX_Q-YiQ&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDg_SBmdW8wl4CpMqVSbEFMawWe-meCGztxzEQCR2M0Ag&oe=65C73343'
+                                width="100%" height="70px" style="filter:blur(10px); ">
+
+
+
+                            <div class="text-card">
+
+                                <h5 class="card-title p-0 my-2 fs-6 ">8 Ball Master</h5>
+                                <a href="#" class="btn p-0 m-0  btn-dark rounded-5 px-2 m-1 bg-opacity-75">Play</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row  mx-1 my-5 rounded">
+
+                    <video class="col-12 rounded" controls autoplay>
+                        <source src="./src/vid/Basketball FRVR - Video Gameplay.mp4" type="video/mp4">
+
+                    </video>
+
+
+                </div>
+
+
+                <div class="container">
+
+                    <div class="row mx-1 my-4 ">
+
+                        <ul class="nav nav-tabs my-1 float-end">
+                            <li class="nav-item">
+                                <p class="fs-4 fw-bold"> All Games:</p>
+                            </li>
+
+                            <li class="nav-item dropdown  mx-4">
+                                <a class="nav-link dropdown-toggle text-dark bg-secondary rounded-3 bg-opacity-25 "
+                                    data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">All games</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item fw-medium" href="#">Action</a></li>
+                                    <li><a class="dropdown-item fw-medium" href="#"> Cards</a></li>
+                                    <li><a class="dropdown-item fw-medium" href="#">Adveture</a></li>
+                                    <li><a class="dropdown-item fw-medium" href="#">buttle</a></li>
+                                    <li><a class="dropdown-item fw-medium" href="#">Puzzle</a></li>
+                                    <li><a class="dropdown-item fw-medium" href="#">Action</a></li>
+
+
+
+                                </ul>
+                            </li>
+
+
+                            <li class="nav-item dropdown mx-4 ">
+                                <a class="nav-link dropdown-toggle text-dark bg-secondary rounded-3 bg-opacity-25 "
+                                    data-bs-toggle="dropdown" href="#" role="button"
+                                    aria-expanded="false">Recommended</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item fw-medium" href="#">Action</a></li>
+                                    <li><a class="dropdown-item fw-medium" href="#"> Cards</a></li>
+                                    <li><a class="dropdown-item fw-medium" href="#">Adveture</a></li>
+                                    <li><a class="dropdown-item fw-medium" href="#">buttle</a></li>
+                                    <li><a class="dropdown-item fw-medium" href="#">Puzzle</a></li>
+                                    <li><a class="dropdown-item fw-medium" href="#">Action</a></li>
+
+
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Browse</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="row   mx-1 my-4 ">
+
+
+                        <div class="col-xl-3 my-1 col-sm-4  card me-2">
+
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An9GJshB377NxOzGBWbwXV1UDucySUaLuWr6WHyLZ8LfKiWjaAfNdvlAv4HDt9AVNAhlW8szMrZE0crzAKgVlZ7RkuJA94OK0HLUpzfbV84-dB9Gk6GB29mk3sR-UT_vY6aF?stp=p312x192&ccb=10-5&oh=00_AfDU3SjbmoSNGA_7uPzasGnHDAbZz22Ge4oMLjizTTqvKQ&oe=65E9A4A0&_nc_sid=73a32d"
+                                class="card-img-top rounded-top-0 " alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><b> Sord</b> title <b>make up</b> .s
+                                    content.
+                                </p>
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 my-1 col-sm-4 card me-2">
+
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An_ZVEWqJFzesa0BFTQGTEoOY_YoIY_AWPDkdzxuxML_uIdIa6iIf4P7O8n0wehQM2pOip07ZuRqbf3fj4li5MJWjZAYne71vOUawo5yK8wt0SqpjUBVyvr6eD_xyuy_JpcY?stp=p312x192&ccb=10-5&oh=00_AfAb_L1h9Ukewf1F5br5ST7kO5xIPkalwSP-phnFDwwm-g&oe=65E9AFA2&_nc_sid=73a32d"
+                                class="card-img-top rounded-top-0 " alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><b> Sord</b> title <b>make up</b> s
+                                    content.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 my-1 col-sm-4 card me-2">
+
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An-a3vvkSLdZQ3czN811Tl97LCploIiKlnNN7Hjm7H3w0APrCBGe3xbsCFBC6FYJFmWOPcWHBrrDXFybmSL4xH5knCKn63hVuntlIQrKiwMEUGrovUFxVGy_ljN4ikgbsTfU?stp=p312x192&ccb=10-5&oh=00_AfBjDLlFfYZEDWv2LY3aDFLQa54NWyp66ax4tINbtEJgrg&oe=65E9BAE5&_nc_sid=73a32d"
+                                class="card-img-top rounded-top-0 " alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><b> Sord</b> title <b>make up</b> s
+                                    content.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 my-1 col-sm-4  card me-2">
+
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An9H9yQ8x0YgJI7T0aD_bUfu0krUE6KjXrv7pc4Oq0Zg0xdXTClS6-cP6ofg1RO6FxpBaQ1TKPJvcA5aT-urnGFR8WUc_uIjtVjYFXbMTyCcXsYoWNLUc49SQCbRZlcOJ2RHpA?stp=p312x192&ccb=10-5&oh=00_AfAwh_sW-FcbNK08TIzVhXPit4s57wByMXO_ErL4x97PKw&oe=65E9AFB2&_nc_sid=73a32d"
+                                class="card-img-top rounded-top-0 " alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><b> Sord</b> title <b>make up</b> s
+                                    content.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-xl-3 my-1 col-sm-4  card me-2">
+
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An9GJshB377NxOzGBWbwXV1UDucySUaLuWr6WHyLZ8LfKiWjaAfNdvlAv4HDt9AVNAhlW8szMrZE0crzAKgVlZ7RkuJA94OK0HLUpzfbV84-dB9Gk6GB29mk3sR-UT_vY6aF?stp=p312x192&ccb=10-5&oh=00_AfDU3SjbmoSNGA_7uPzasGnHDAbZz22Ge4oMLjizTTqvKQ&oe=65E9A4A0&_nc_sid=73a32d"
+                                class="card-img-top rounded-top-0 " alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><b> Sord</b> title <b>make up</b> s
+                                    content.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 me-2 col-sm-4 card me-2">
+
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An_ZVEWqJFzesa0BFTQGTEoOY_YoIY_AWPDkdzxuxML_uIdIa6iIf4P7O8n0wehQM2pOip07ZuRqbf3fj4li5MJWjZAYne71vOUawo5yK8wt0SqpjUBVyvr6eD_xyuy_JpcY?stp=p312x192&ccb=10-5&oh=00_AfAb_L1h9Ukewf1F5br5ST7kO5xIPkalwSP-phnFDwwm-g&oe=65E9AFA2&_nc_sid=73a32d"
+                                class="card-img-top rounded-top-0 " alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><b> Sord</b> title <b>make up</b> s
+                                    content.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 my-1 col-sm-4 card me-2">
+
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An-a3vvkSLdZQ3czN811Tl97LCploIiKlnNN7Hjm7H3w0APrCBGe3xbsCFBC6FYJFmWOPcWHBrrDXFybmSL4xH5knCKn63hVuntlIQrKiwMEUGrovUFxVGy_ljN4ikgbsTfU?stp=p312x192&ccb=10-5&oh=00_AfBjDLlFfYZEDWv2LY3aDFLQa54NWyp66ax4tINbtEJgrg&oe=65E9BAE5&_nc_sid=73a32d"
+                                class="card-img-top rounded-top-0 " alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><b> Sord</b> title <b>make up</b> s
+                                    content.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 my-1 col-sm-4  story card me-2">
+
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An9H9yQ8x0YgJI7T0aD_bUfu0krUE6KjXrv7pc4Oq0Zg0xdXTClS6-cP6ofg1RO6FxpBaQ1TKPJvcA5aT-urnGFR8WUc_uIjtVjYFXbMTyCcXsYoWNLUc49SQCbRZlcOJ2RHpA?stp=p312x192&ccb=10-5&oh=00_AfAwh_sW-FcbNK08TIzVhXPit4s57wByMXO_ErL4x97PKw&oe=65E9AFB2&_nc_sid=73a32d"
+                                class="card-img-top rounded-top-0 " alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><b> Sord</b> title <b>make up</b> s
+                                    content.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-xl-3 my-1  col-sm-4 card me-2">
+
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An9GJshB377NxOzGBWbwXV1UDucySUaLuWr6WHyLZ8LfKiWjaAfNdvlAv4HDt9AVNAhlW8szMrZE0crzAKgVlZ7RkuJA94OK0HLUpzfbV84-dB9Gk6GB29mk3sR-UT_vY6aF?stp=p312x192&ccb=10-5&oh=00_AfDU3SjbmoSNGA_7uPzasGnHDAbZz22Ge4oMLjizTTqvKQ&oe=65E9A4A0&_nc_sid=73a32d"
+                                class="card-img-top rounded-top-0 " alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><b> Sord</b> title <b>make up</b> s
+                                    content.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 my-1 col-sm-4 card me-2">
+
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An_ZVEWqJFzesa0BFTQGTEoOY_YoIY_AWPDkdzxuxML_uIdIa6iIf4P7O8n0wehQM2pOip07ZuRqbf3fj4li5MJWjZAYne71vOUawo5yK8wt0SqpjUBVyvr6eD_xyuy_JpcY?stp=p312x192&ccb=10-5&oh=00_AfAb_L1h9Ukewf1F5br5ST7kO5xIPkalwSP-phnFDwwm-g&oe=65E9AFA2&_nc_sid=73a32d"
+                                class="card-img-top rounded-top-0 " alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><b> Sord</b> title <b>make up</b> s
+                                    content.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 my-1 col-sm-4  card me-2">
+
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An-a3vvkSLdZQ3czN811Tl97LCploIiKlnNN7Hjm7H3w0APrCBGe3xbsCFBC6FYJFmWOPcWHBrrDXFybmSL4xH5knCKn63hVuntlIQrKiwMEUGrovUFxVGy_ljN4ikgbsTfU?stp=p312x192&ccb=10-5&oh=00_AfBjDLlFfYZEDWv2LY3aDFLQa54NWyp66ax4tINbtEJgrg&oe=65E9BAE5&_nc_sid=73a32d"
+                                class="card-img-top rounded-top-0 " alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><b> Sord</b> title <b>make up</b> s
+                                    content.jj
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 my-1 d-xl-flex col-sm-4 story card me-2">
+
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An9H9yQ8x0YgJI7T0aD_bUfu0krUE6KjXrv7pc4Oq0Zg0xdXTClS6-cP6ofg1RO6FxpBaQ1TKPJvcA5aT-urnGFR8WUc_uIjtVjYFXbMTyCcXsYoWNLUc49SQCbRZlcOJ2RHpA?stp=p312x192&ccb=10-5&oh=00_AfAwh_sW-FcbNK08TIzVhXPit4s57wByMXO_ErL4x97PKw&oe=65E9AFB2&_nc_sid=73a32d"
+                                class="card-img-top rounded-top-0 " alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><b> Sord</b> title <b>make up</b> s
+                                    content.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-xl-3 my-1 col-sm-4  card me-2">
+
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An9GJshB377NxOzGBWbwXV1UDucySUaLuWr6WHyLZ8LfKiWjaAfNdvlAv4HDt9AVNAhlW8szMrZE0crzAKgVlZ7RkuJA94OK0HLUpzfbV84-dB9Gk6GB29mk3sR-UT_vY6aF?stp=p312x192&ccb=10-5&oh=00_AfDU3SjbmoSNGA_7uPzasGnHDAbZz22Ge4oMLjizTTqvKQ&oe=65E9A4A0&_nc_sid=73a32d"
+                                class="card-img-top rounded-top-0 " alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><b> Sord</b> title <b>make up</b> s
+                                    content.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 my-1 col-sm-4 card me-2">
+
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An_ZVEWqJFzesa0BFTQGTEoOY_YoIY_AWPDkdzxuxML_uIdIa6iIf4P7O8n0wehQM2pOip07ZuRqbf3fj4li5MJWjZAYne71vOUawo5yK8wt0SqpjUBVyvr6eD_xyuy_JpcY?stp=p312x192&ccb=10-5&oh=00_AfAb_L1h9Ukewf1F5br5ST7kO5xIPkalwSP-phnFDwwm-g&oe=65E9AFA2&_nc_sid=73a32d"
+                                class="card-img-top rounded-top-0 " alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><b> Sord</b> title <b>make up</b> s
+                                    content.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 my-1 col-sm-4 card me-2">
+
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An-a3vvkSLdZQ3czN811Tl97LCploIiKlnNN7Hjm7H3w0APrCBGe3xbsCFBC6FYJFmWOPcWHBrrDXFybmSL4xH5knCKn63hVuntlIQrKiwMEUGrovUFxVGy_ljN4ikgbsTfU?stp=p312x192&ccb=10-5&oh=00_AfBjDLlFfYZEDWv2LY3aDFLQa54NWyp66ax4tINbtEJgrg&oe=65E9BAE5&_nc_sid=73a32d"
+                                class="card-img-top rounded-top-0 " alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><b> Sord</b> title <b>make up</b> s
+                                    content.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 my-1 col-sm-4  d-xl-flex  card me-2">
+
+                            <img src="https://scontent.fcai21-3.fna.fbcdn.net/m1/v/t6/An9H9yQ8x0YgJI7T0aD_bUfu0krUE6KjXrv7pc4Oq0Zg0xdXTClS6-cP6ofg1RO6FxpBaQ1TKPJvcA5aT-urnGFR8WUc_uIjtVjYFXbMTyCcXsYoWNLUc49SQCbRZlcOJ2RHpA?stp=p312x192&ccb=10-5&oh=00_AfAwh_sW-FcbNK08TIzVhXPit4s57wByMXO_ErL4x97PKw&oe=65E9AFB2&_nc_sid=73a32d"
+                                class="card-img-top rounded-top-0 " alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><b> Sord</b> title <b>make up</b> s
+                                    content.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

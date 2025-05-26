@@ -1,0 +1,19 @@
+{
+  "name": "facebook-clone",
+  "version": "1.0.0",
+  "description": "facebook-clone using Bootstrap 5 and SASS",
+  "source": "./index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.11.0",
+    "parcel": "^2.15.1"
+  }
+}
